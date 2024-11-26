@@ -1,0 +1,69 @@
+\subsection{Security Definitions}
+\begin{defn}
+    Computationally Secure: it takes N operations using the \textbf{best known algorithm} to break a crytographic system and N is too large to be feasible.
+\end{defn}
+
+\begin{defn}
+    Provably Secure: breaking the system is reduced to solving some well-studied hard problem.
+\end{defn}
+
+\begin{defn}
+    Unconditional Secure/Perfectly Secure: the system is secure against an adversary with unlimited computational power.
+\end{defn}
+
+Key size is important. Advances in computer hardware and algorithms are important. In the future, it will be broken due to hardware or better algorithms.
+
+\subsection{Probability and Ciphers}
+
+\begin{defn}
+Let $P$ denote the set of plaintexts, $K$ the set of keys, and $C$ denote the set of cipher texts. $p(P=m)$ is the probability that the plaintext is $m$. Then,
+\[
+p(C=c) = \sum_{k: c\in \mathbb{C}(k)} p(K=k)\cdot p(P=d_k(c))
+\]
+\end{defn}
+
+\Comment{add examples in here}
+
+\subsection{Perfect Secrecy}
+Previously, the ciphertext revelas a lot of information about the plaintext. We want a system in which ciphertext does not reveal anything about the plaintext. 
+
+\begin{defn}
+    Perfect secrecy: a cryptosystem has perfect secrecy if \[ p(P=m | C=c) = p(P=m) \] for all plain texts $m$ and ciphertexts $c$.
+\end{defn}
+
+\begin{lem}
+    Assume the cryptosystem is perfectly secure, then 
+    \[ \#K \geq \#C \geq \#P\] where $\#$ denotes the number of items in the corresponding set. 
+\end{lem}
+
+\subsection{One-Time Pad}
+
+\begin{thm}
+    Shannon's Theorem: Let $(P, C, K, e_k(), d_k())$ denote a cryptosystem with \( \#K = \#C = \#P\). Then the cryptosystem provides perfect secrecy if and only if:
+    \begin{itemize}
+        \item Every key is used with equal probability $1/\#K$
+        \item For each $m \in P$ and $c \in C$, there is a unique key $k$ such that $c = e_k(m)$
+    \end{itemize}
+\end{thm}
+
+\Comment{Add modified shift cipher here}
+
+\subsection{Entropy}
+Due to the key distribution problem (the key must be as long as the message), perfect secrecy is not practical. Instead, we need a cryptosystem in which \textbf{one key can be used many times}, and \textbf{a  small key can encrypt a long message}. Such a system is not perfectly secure, but it should be computationally secure. We need to measure the amount of informatiomn first: Shannon's entropy. \\
+
+\textbf{Example:} For a specific question X: ``Will you go out with me?'', the answer is Yes or No. If you always say No, the amount of information, $H(X) = 0$. If you always say Yes, $H(X) = 0$. You know the result. If you say Yes and No with equal probability, $H(X) = 1$. When you get the answer, no matter what it is, you learn a lot. Here, $H()$ is the entropy, and is independent of the length of $X$.
+
+\begin{defn}
+    Shannon's Entropy: Let $X$ be a random variable which takes a finite set of values $x_i$, with $1 \leq 1 \leq n$, and has a probability distribution $p(x)$. We use the convention that if $p_i = 0$ then $p_i \log_2(p_i) = 0$. The entropy of $X$ is defined as:
+
+    \[ H(X) = -\sum_{i=1}^n p_i \cdot \log_2 p_i\] 
+
+    Properties:
+    \begin{itemize}
+        \item $H(X) \geq 0$
+        \item $H(X) = 0$ if $p_i = 1$ and $p_j = 0$ for $i \neq j$
+        \item if $p_i = 1/n$ for all $i$, then $H(X) = \log_2(n)$
+    \end{itemize}
+\end{defn}
+
+\subsection{Spurious Keys and Unicity Distance}

@@ -1,0 +1,10 @@
+.json
+.aux
+.fdb_auto
+.fls
+.log
+.out
+.synctex.gz
+.fdb_latexmk
+
+cryptography_made_simple.pdf
