@@ -633,7 +633,7 @@ The Miller-Rabin test is an improvement over the Fermat test. Unlike determinist
     \end{itemize}
 \end{defn}
 
-Not all equations make good elliptic curves. They must satisfy a condition that ensures there are no sharp points or self-intersections. The curve must be \emph{smooth} and \emph{non-singular}.
+Not all equations make good elliptic curves. They must satisfy a condition that ensures there are no sharp points or self-intersections. The curve must be \emph{smooth} and \emph{non-singular}. This means that the \emph{discriminant must be nonzero}.
 \[ 4a^3 + 27b^2 \neq 0 \]
 
 \textbf{Point Addition:} 
@@ -653,7 +653,7 @@ Not all equations make good elliptic curves. They must satisfy a condition that 
             \]
             where \( \lambda \) (the slope of the line) is:
             \[
-            \lambda = \frac{y_2 - y_1}{x_2 - x_1}
+            \lambda = \frac{y_2 - y_1}{x_2 - x_1} = \frac{\delta y}{\delta x}
             \]
     \item If you’re adding $P$ to itself (doubling), the line you draw is the tangent to the curve at $P$.
     The formulas for \( R = 2P = (x_3, y_3) \) are:
@@ -700,4 +700,8 @@ Using elliptic curves lets us create very secure systems with shorter keys (real
     \textbf{Elliptic Curve Discrete Log Problem}: For a given integer m and a point P, it is easy to compute $Q = mP$. However, given P and Q, it is hard to compute m.
 \end{defn}
 
-Imagine a simple operation: start at one point on the curve, "add" it to itself repeatedly, and you get another point. If I tell you the starting point and the number of additions, it's easy to figure out the end point. But if I give you the end point and ask you to figure out the number of additions, that's really hard. This is what makes elliptic curve cryptography (ECC) secure.
+Imagine a simple operation: start at one point on the curve, "add" it to itself repeatedly, and you get another point. If I tell you the starting point and the number of additions, it's easy to figure out the end point. But if I give you the end point and ask you to figure out the number of additions, that's really hard. This is what makes elliptic curve cryptography (ECC) secure. For cryptographic validity, the curve must:
+\begin{itemize}
+    \item Have a sufficiently large number of points (called the order) to ensure security.
+    \item Avoid known vulnerabilities (e.g., weak curves susceptible to specific attacks like small subgroup attacks).
+\end{itemize}

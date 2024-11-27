@@ -1,8 +1,8 @@
-PWD /Users/annavisman/stack/TUDelft/SC
+PWD /Users/annavisman/stack/TUDelft/SC/notes
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/annavisman/stack/TUDelft/SC/classnotes.tex
+INPUT /Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex
 OUTPUT classnotes.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -209,11 +209,11 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/wasy/wasy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/wasy/wasy7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/wasy/wasy5.tfm
 OUTPUT classnotes.toc
+INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./lectures/lecture1.tex
 INPUT ./lectures/lecture1.tex
 INPUT ./lectures/lecture1.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
@@ -257,6 +257,12 @@ INPUT ./img/zeropoint.png
 INPUT ./lectures/lecture3.tex
 INPUT ./lectures/lecture3.tex
 INPUT ./lectures/lecture3.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./img/permcipher.png
+INPUT ./img/permcipher.png
+INPUT ./img/permcipher.png
+INPUT ./img/permcipher.png
+INPUT ./img/permcipher.png
 INPUT ./lectures/lecture4.tex
 INPUT ./lectures/lecture4.tex
 INPUT ./lectures/lecture4.tex
@@ -279,6 +285,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
