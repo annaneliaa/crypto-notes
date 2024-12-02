@@ -72,7 +72,7 @@ The key space consists of all bijections, or permutations ($26! \approx 2^{88}$ 
 Also called a poly-alphabetic substitution cipher: encrypt each letter with a dfferent alphabet. Use a keyword to shift letters in the plaintext. Unlike the Caesar cipher, where each letter is shifted by a constant number, the Vigenère cipher uses a series of shifts based on the letters of a keyword. This makes it more secure than simple substitution ciphers, as the pattern of shifts changes across the message.  Still, cryptanalysis is easy.
 
 \begin{defn}
-    \textbf{Kasiski Test:} Find the occurence of the repeared sequences and use $\gcd$ to determine the key length.
+    \textbf{Kasiski Test:} Find the occurence of the repeated sequences and use $\gcd$ to determine the key length.
 \end{defn}
 
 The plaintext is encrypted by shifting each letter by the number of positions specified by the corresponding letter in the keyword. If the keyword is shorter than the plaintext, it is repeated until it matches the length of the plaintext.\\

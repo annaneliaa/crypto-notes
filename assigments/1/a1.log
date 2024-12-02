@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  2 DEC 2024 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  2 DEC 2024 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex
-(/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex
+**/Users/annavisman/stack/TUDelft/SC/assigments/1/a1.tex
+(/Users/annavisman/stack/TUDelft/SC/assigments/1/a1.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -356,51 +356,68 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip87
-)
-\c@thm=\count313
-\c@defn=\count314
-\c@conv=\count315
-\c@rem=\count316
-\c@lem=\count317
-\c@cor=\count318
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count313
+\lst@gtempboxa=\box53
+\lst@token=\toks32
+\lst@length=\count314
+\lst@currlwidth=\dimen172
+\lst@column=\count315
+\lst@pos=\count316
+\lst@lostspace=\dimen173
+\lst@width=\dimen174
+\lst@newlines=\count317
+\lst@lineno=\count318
+\lst@maxwidth=\dimen175
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+\c@lstnumber=\count319
+\lst@skipnumbers=\count320
+\lst@framebox=\box54
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/02/21 1.10 listings configuration
+))
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count319
-\l__pdf_internal_box=\box53
-) (./classnotes.aux)
-\openout1 = `classnotes.aux'.
+\l__color_backend_stack_int=\count321
+\l__pdf_internal_box=\box55
+) (./a1.aux)
+\openout1 = `a1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen172
-\scratchbox=\box54
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen173
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count322
+\scratchdimen=\dimen176
+\scratchbox=\box56
+\nofMPsegments=\count323
+\nofMParguments=\count324
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count325
+\MPscratchDim=\dimen177
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
+\everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -415,15 +432,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
-* v-part:(T,H,B)=(54.2025pt, 686.56499pt, 54.2025pt)
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=505.89pt
-* \textheight=686.56499pt
-* \oddsidemargin=-18.06749pt
-* \evensidemargin=-18.06749pt
-* \topmargin=-55.06749pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -443,166 +460,74 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 30.
-(./classnotes.out) (./classnotes.out)
+Package hyperref Info: Link coloring OFF on input line 8.
+(./a1.out) (./a1.out)
 \@outlinefile=\write3
-\openout3 = `classnotes.out'.
+\openout3 = `a1.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+\c@lstlisting=\count328
+LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 33.
+LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 33.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-) (./classnotes.toc)
-\tf@toc=\write4
-\openout4 = `classnotes.toc'.
-
- [1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lectures/lecture1.tex [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3]
-<img/w1encryption.png, id=226, 698.61pt x 213.79875pt>
-File: img/w1encryption.png Graphic file (type png)
-<use img/w1encryption.png>
-Package pdftex.def Info: img/w1encryption.png  used on input line 101.
-(pdftex.def)             Requested size: 349.30414pt x 106.89911pt.
-) [4 <./img/w1encryption.png>] (./lectures/lecture2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
-
- []
-
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+)
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--318
-
+Overfull \hbox (51.72629pt too wide) detected at line 53
+[][]
  []
 
+[1
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--354
-
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (91.72641pt too wide) detected at line 68
+[][]
  []
 
-[9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 470--471
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 512--513
-
- []
-
-[12]
-<img/fermatprimetest.png, id=335, 270.00874pt x 117.43875pt>
-File: img/fermatprimetest.png Graphic file (type png)
-<use img/fermatprimetest.png>
-Package pdftex.def Info: img/fermatprimetest.png  used on input line 572.
-(pdftex.def)             Requested size: 189.00482pt x 82.20654pt.
-<img/MRprimetest.png, id=336, 348.30125pt x 254.9525pt>
-File: img/MRprimetest.png Graphic file (type png)
-<use img/MRprimetest.png>
-Package pdftex.def Info: img/MRprimetest.png  used on input line 581.
-(pdftex.def)             Requested size: 226.39313pt x 165.71715pt.
- [13 <./img/fermatprimetest.png> <./img/MRprimetest.png>]
-<img/ecadd.png, id=348, 236.885pt x 193.72375pt>
-File: img/ecadd.png Graphic file (type png)
-<use img/ecadd.png>
-Package pdftex.def Info: img/ecadd.png  used on input line 682.
-(pdftex.def)             Requested size: 151.76854pt x 124.11874pt.
-<img/pointdoubling.png, id=349, 254.9525pt x 209.78375pt>
-File: img/pointdoubling.png Graphic file (type png)
-<use img/pointdoubling.png>
-Package pdftex.def Info: img/pointdoubling.png  used on input line 687.
-(pdftex.def)             Requested size: 151.76854pt x 124.88528pt.
-<img/zeropoint.png, id=350, 219.82124pt x 229.85875pt>
-File: img/zeropoint.png Graphic file (type png)
-<use img/zeropoint.png>
-Package pdftex.def Info: img/zeropoint.png  used on input line 692.
-(pdftex.def)             Requested size: 151.76854pt x 158.7044pt.
- [14 <./img/ecadd.png> <./img/pointdoubling.png> <./img/zeropoint.png>]) [15] (./lectures/lecture3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-[17]
-<img/permcipher.png, id=378, 418.56375pt x 209.78375pt>
-File: img/permcipher.png Graphic file (type png)
-<use img/permcipher.png>
-Package pdftex.def Info: img/permcipher.png  used on input line 104.
-(pdftex.def)             Requested size: 252.94499pt x 126.7739pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-) [18 <./img/permcipher.png>] (./lectures/lecture4.tex
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-[19]) [20] (./classnotes.aux)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+) [2]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 110.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+ [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4] (./a1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `classnotes.out' has not changed.
-(rerunfilecheck)             Checksum: B24B1D70C0A5D9C4A9ECBB1CAF051E91;6315.
+Package rerunfilecheck Info: File `a1.out' has not changed.
+(rerunfilecheck)             Checksum: 60F2CD65396FE9C64ACFAF909B290856;614.
  ) 
 Here is how much of TeX's memory you used:
- 12762 strings out of 474116
- 200623 string characters out of 5743681
- 1948187 words of memory out of 5000000
- 34790 multiletter control sequences out of 15000+600000
- 570443 words of font info for 86 fonts, out of 8000000 for 9000
+ 14303 strings out of 474116
+ 220134 string characters out of 5743681
+ 1976187 words of memory out of 5000000
+ 36397 multiletter control sequences out of 15000+600000
+ 568612 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,844b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on classnotes.pdf (20 pages, 603542 bytes).
+ 75i,7n,79p,587b,2086s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on a1.pdf (4 pages, 154072 bytes).
 PDF statistics:
- 523 PDF objects out of 1000 (max. 8388607)
- 440 compressed objects within 5 object streams
- 138 named destinations out of 1000 (max. 500000)
- 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

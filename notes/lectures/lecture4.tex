@@ -22,7 +22,13 @@ p(C=c) = \sum_{k: c\in \mathbb{C}(k)} p(K=k)\cdot p(P=d_k(c))
 \]
 \end{defn}
 
-\Comment{add examples in here}
+This formula calculates the probability of a specific cipher text $C = c$ occuring. It sums over all keys $k$ that could result in the ciphertext $c$ , combining the probabilities of the key and the corresponding plaintext. It is fundamental in several cryptographic analyses:
+\begin{itemize}
+    \item Ciphertext distribution: compute the distribution of the ciphertexts given the plaintext and key distributions. By ensuring $p(C=c)$ is uniform, cryptographers achieve perfect secrecy in schemes like the One-Time Pad.
+    \item Evaluating security metrics: the uncertainty of $C$ is maximized for a secure cipher, ensuring that an attacker cannot infer patterns.
+\end{itemize}
+
+
 
 \subsection{Perfect Secrecy}
 Previously, the ciphertext revelas a lot of information about the plaintext. We want a system in which ciphertext does not reveal anything about the plaintext. 
