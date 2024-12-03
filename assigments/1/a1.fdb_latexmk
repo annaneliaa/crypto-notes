@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1733153766.88908 "/Users/annavisman/stack/TUDelft/SC/assigments/1/a1.tex" "a1.pdf" "a1" 1733153767.51016 0
-  "/Users/annavisman/stack/TUDelft/SC/assigments/1/a1.tex" 1733153766.69507 4488 5b568243300ee833ddd6a3bd926b760b ""
+["pdflatex"] 1733232451.34029 "/Users/annavisman/stack/TUDelft/SC/assigments/1/a1.tex" "a1.pdf" "a1" 1733232452.09873 0
+  "/Users/annavisman/stack/TUDelft/SC/assigments/1/a1.tex" 1733232451.11793 9353 4cdc10e4d0c999c7d808423039e57499 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -42,6 +42,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
@@ -125,9 +126,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1731759341.66087 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731759331 8221437 9c99fe9db5777ba97135d51eeed75aed ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "a1.aux" 1733153767.44475 635 3963558c06bfcdcdf877d9b469a3e867 "pdflatex"
-  "a1.out" 1733153767.44547 614 60f2cd65396fe9c64acfaf909b290856 "pdflatex"
-  "a1.tex" 1733153766.69507 4488 5b568243300ee833ddd6a3bd926b760b ""
+  "a1.aux" 1733232452.02273 1674 b346f5696a7c32741b3cc7a4663c6143 "pdflatex"
+  "a1.out" 1733232452.02371 1084 5d27f2f0e3abbcf7dedc2675f98e57db "pdflatex"
+  "a1.tex" 1733232451.11793 9353 4cdc10e4d0c999c7d808423039e57499 ""
+  "img/caeser.png" 1733226795.45964 99363 93cbca280e4e7cea42460fbddd0e6004 ""
   (generated)
   "a1.aux"
   "a1.log"

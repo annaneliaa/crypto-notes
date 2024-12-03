@@ -6,6 +6,7 @@
 .out
 .synctex.gz
 .fdb_latexmk
+.png
 
 cryptography_made_simple.pdf
 assignments
