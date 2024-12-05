@@ -208,8 +208,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/wasy/wasy10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/wasy/wasy7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/wasy/wasy5.tfm
-OUTPUT classnotes.toc
 INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT classnotes.toc
 INPUT ./lectures/lecture1.tex
 INPUT ./lectures/lecture1.tex
 INPUT ./lectures/lecture1.tex
@@ -266,6 +266,14 @@ INPUT ./img/permcipher.png
 INPUT ./lectures/lecture4.tex
 INPUT ./lectures/lecture4.tex
 INPUT ./lectures/lecture4.tex
+INPUT ./img/entropy.png
+INPUT ./img/entropy.png
+INPUT ./img/entropy.png
+INPUT ./img/entropy.png
+INPUT ./img/entropy.png
+INPUT ./lectures/lecture5.tex
+INPUT ./lectures/lecture5.tex
+INPUT ./lectures/lecture5.tex
 INPUT classnotes.aux
 INPUT ./classnotes.out
 INPUT ./classnotes.out

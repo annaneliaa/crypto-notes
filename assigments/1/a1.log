@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  3 DEC 2024 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  3 DEC 2024 18:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -483,73 +483,87 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 12.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 80--84
 
  []
 
 
-Overfull \hbox (11.97589pt too wide) detected at line 99
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
+
  []
 
 
-Overfull \hbox (51.97601pt too wide) detected at line 114
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
  []
 
 
-Overfull \hbox (11.11652pt too wide) detected at line 120
-\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A [][] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
  []
 
 [2]
+Overfull \hbox (11.97589pt too wide) detected at line 148
+[][]
+ []
+
+
+Overfull \hbox (51.97601pt too wide) detected at line 163
+[][]
+ []
+
+
+Overfull \hbox (11.11652pt too wide) detected at line 169
+\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 ) = [] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) = \OMS/cmsy/m/n/10 ^^@ [] [] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A [][] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 C \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
+ []
+
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 133.
+(hyperref)                than one, level fixed on input line 182.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/02/21 1.10 listings language file
-) [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 189.
+) [3]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 238.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 189.
- [4]
-<img/caeser.png, id=162, 613.29124pt x 253.94875pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 238.
+ [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [5]
+<img/caeser.png, id=182, 613.29124pt x 253.94875pt>
 File: img/caeser.png Graphic file (type png)
 <use img/caeser.png>
-Package pdftex.def Info: img/caeser.png  used on input line 255.
+Package pdftex.def Info: img/caeser.png  used on input line 304.
 (pdftex.def)             Requested size: 306.64487pt x 126.97406pt.
- [5 <./img/caeser.png>] (./a1.aux)
+ [6 <./img/caeser.png>] (./a1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -558,18 +572,18 @@ Package rerunfilecheck Info: File `a1.out' has not changed.
 (rerunfilecheck)             Checksum: 5D27F2F0E3ABBCF7DEDC2675F98E57DB;1084.
  ) 
 Here is how much of TeX's memory you used:
- 14394 strings out of 474116
- 221460 string characters out of 5743681
- 1985187 words of memory out of 5000000
- 36443 multiletter control sequences out of 15000+600000
- 568612 words of font info for 80 fonts, out of 8000000 for 9000
+ 14405 strings out of 474116
+ 221590 string characters out of 5743681
+ 1984187 words of memory out of 5000000
+ 36447 multiletter control sequences out of 15000+600000
+ 569231 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,587b,1964s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,587b,2072s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on a1.pdf (5 pages, 240527 bytes).
+Output written on a1.pdf (6 pages, 243634 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 120 named destinations out of 1000 (max. 500000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 125 named destinations out of 1000 (max. 500000)
  70 words of extra memory for PDF output out of 10000 (max. 10000000)
 
