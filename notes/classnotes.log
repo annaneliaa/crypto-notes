@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  5 DEC 2024 15:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  11 DEC 2024 17:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -469,7 +469,7 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 \openout4 = `classnotes.toc'.
 
  (./lectures/lecture1.tex [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3]
-<img/w1encryption.png, id=296, 698.61pt x 213.79875pt>
+<img/w1encryption.png, id=347, 698.61pt x 213.79875pt>
 File: img/w1encryption.png Graphic file (type png)
 <use img/w1encryption.png>
 Package pdftex.def Info: img/w1encryption.png  used on input line 101.
@@ -520,28 +520,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 512--513
  []
 
 [12]
-<img/fermatprimetest.png, id=405, 270.00874pt x 117.43875pt>
+<img/fermatprimetest.png, id=456, 270.00874pt x 117.43875pt>
 File: img/fermatprimetest.png Graphic file (type png)
 <use img/fermatprimetest.png>
 Package pdftex.def Info: img/fermatprimetest.png  used on input line 572.
 (pdftex.def)             Requested size: 189.00482pt x 82.20654pt.
-<img/MRprimetest.png, id=406, 348.30125pt x 254.9525pt>
+<img/MRprimetest.png, id=457, 348.30125pt x 254.9525pt>
 File: img/MRprimetest.png Graphic file (type png)
 <use img/MRprimetest.png>
 Package pdftex.def Info: img/MRprimetest.png  used on input line 581.
 (pdftex.def)             Requested size: 226.39313pt x 165.71715pt.
  [13 <./img/fermatprimetest.png> <./img/MRprimetest.png>]
-<img/ecadd.png, id=418, 236.885pt x 193.72375pt>
+<img/ecadd.png, id=469, 236.885pt x 193.72375pt>
 File: img/ecadd.png Graphic file (type png)
 <use img/ecadd.png>
 Package pdftex.def Info: img/ecadd.png  used on input line 682.
 (pdftex.def)             Requested size: 151.76854pt x 124.11874pt.
-<img/pointdoubling.png, id=419, 254.9525pt x 209.78375pt>
+<img/pointdoubling.png, id=470, 254.9525pt x 209.78375pt>
 File: img/pointdoubling.png Graphic file (type png)
 <use img/pointdoubling.png>
 Package pdftex.def Info: img/pointdoubling.png  used on input line 687.
 (pdftex.def)             Requested size: 151.76854pt x 124.88528pt.
-<img/zeropoint.png, id=420, 219.82124pt x 229.85875pt>
+<img/zeropoint.png, id=471, 219.82124pt x 229.85875pt>
 File: img/zeropoint.png Graphic file (type png)
 <use img/zeropoint.png>
 Package pdftex.def Info: img/zeropoint.png  used on input line 692.
@@ -567,7 +567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
  []
 
 [17]
-<img/permcipher.png, id=449, 418.56375pt x 209.78375pt>
+<img/permcipher.png, id=499, 418.56375pt x 209.78375pt>
 File: img/permcipher.png Graphic file (type png)
 <use img/permcipher.png>
 Package pdftex.def Info: img/permcipher.png  used on input line 104.
@@ -583,7 +583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
  []
 
 [20]
-<img/entropy.png, id=475, 552.0625pt x 414.54875pt>
+<img/entropy.png, id=525, 552.0625pt x 414.54875pt>
 File: img/entropy.png Graphic file (type png)
 <use img/entropy.png>
 Package pdftex.def Info: img/entropy.png  used on input line 146.
@@ -602,27 +602,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-) [23] (./lectures/lecture5.tex) [24] (./classnotes.aux)
+) [23] (./lectures/lecture5.tex
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+<img/game-factor.png, id=549, 473.77pt x 174.6525pt>
+File: img/game-factor.png Graphic file (type png)
+<use img/game-factor.png>
+Package pdftex.def Info: img/game-factor.png  used on input line 50.
+(pdftex.def)             Requested size: 236.88441pt x 87.32603pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24]
+<img/PRFbad.png, id=561, 522.95375pt x 297.11pt>
+File: img/PRFbad.png Graphic file (type png)
+<use img/PRFbad.png>
+Package pdftex.def Info: img/PRFbad.png  used on input line 81.
+(pdftex.def)             Requested size: 261.47623pt x 148.55463pt.
+<img/PRFfinal.png, id=562, 672.5125pt x 273.02pt>
+File: img/PRFfinal.png Graphic file (type png)
+<use img/PRFfinal.png>
+Package pdftex.def Info: img/PRFfinal.png  used on input line 98.
+(pdftex.def)             Requested size: 336.25542pt x 136.50966pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[25 <./img/game-factor.png> <./img/PRFbad.png>] [26 <./img/PRFfinal.png>]
+<img/OWgame.png, id=581, 324.21124pt x 121.45375pt>
+File: img/OWgame.png Graphic file (type png)
+<use img/OWgame.png>
+Package pdftex.def Info: img/OWgame.png  used on input line 160.
+(pdftex.def)             Requested size: 162.10522pt x 60.72672pt.
+<img/OWpass.png, id=582, 422.57875pt x 154.5775pt>
+File: img/OWpass.png Graphic file (type png)
+<use img/OWpass.png>
+Package pdftex.def Info: img/OWpass.png  used on input line 207.
+(pdftex.def)             Requested size: 211.28885pt x 77.28854pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./img/OWgame.png>]
+<img/OWCPA.png, id=591, 486.81876pt x 137.51375pt>
+File: img/OWCPA.png Graphic file (type png)
+<use img/OWCPA.png>
+Package pdftex.def Info: img/OWCPA.png  used on input line 227.
+(pdftex.def)             Requested size: 243.40878pt x 68.7567pt.
+ [28 <./img/OWpass.png> <./img/OWCPA.png>]
+<img/OWcca.png, id=600, 601.24625pt x 140.525pt>
+File: img/OWcca.png Graphic file (type png)
+<use img/OWcca.png>
+Package pdftex.def Info: img/OWcca.png  used on input line 266.
+(pdftex.def)             Requested size: 300.62238pt x 70.26231pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+[29 <./img/OWcca.png>]
+<img/INDcca.png, id=611, 604.2575pt x 192.72pt>
+File: img/INDcca.png Graphic file (type png)
+<use img/INDcca.png>
+Package pdftex.def Info: img/INDcca.png  used on input line 312.
+(pdftex.def)             Requested size: 302.128pt x 96.35976pt.
+) [30 <./img/INDcca.png>] (./classnotes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `classnotes.out' has not changed.
-(rerunfilecheck)             Checksum: 3711D99BFEBFE9B1BE068B2F62BD4D9F;8557.
+(rerunfilecheck)             Checksum: 4B4BC712668BE65BDFF270AFDC3FA752;10642.
  ) 
 Here is how much of TeX's memory you used:
- 12820 strings out of 474116
- 201542 string characters out of 5743681
+ 12926 strings out of 474116
+ 203398 string characters out of 5743681
  1949187 words of memory out of 5000000
- 34814 multiletter control sequences out of 15000+600000
+ 34883 multiletter control sequences out of 15000+600000
  570443 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,844b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on classnotes.pdf (24 pages, 780039 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on classnotes.pdf (30 pages, 1198106 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 542 compressed objects within 6 object streams
- 169 named destinations out of 1000 (max. 500000)
- 473 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 764 PDF objects out of 1000 (max. 8388607)
+ 647 compressed objects within 7 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 593 words of extra memory for PDF output out of 10000 (max. 10000000)
 
