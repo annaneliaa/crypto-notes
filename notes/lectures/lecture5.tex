@@ -333,7 +333,49 @@ A system which is IND-PASS secure must be semanticallt secure against passive ad
 \end{thm}
 
 \subsection{Other Notions of Security}
-\Comment{Add definitions here from slides}
+\begin{itemize}
+    \item Many Time Security: How many times can we use the LR oracle?
+    \item Real-or-Random: Oracle encrypts either the real message or a random message of the same size.
+    \item Lunchtime Attacks: (CCA1) Adversary has decryption oracle during the find stage for some time.
+    \item Nonce-Based Encryption: Deterministic algorithms are not IND-CPA secure. Therefore, nonce (number used once) should be used.
+    \item Data Encapsulation Mechanism: Symmetric system but key is used once.
+    \item Non-malleability: Given a ciphertext of an unknown plaintext, the adversary can compute a new ciphertext for a \textit{related} plaintext.
+    \item Plaintext-aware: One needs to know the plaintext to encrypt.
+\end{itemize}
+
+\subsubsection{Malleability}
+\textbf{Malleability} in cryptography refers to a property of some encryption schemes where an adversary, given a ciphertext \( C \), can modify it to produce another ciphertext \( C' \) such that \( C' \) decrypts to a related plaintext \( M' \), where \( M' \) is a function of the original plaintext \( M \). 
+
+In a \textit{malleable encryption scheme}, the attacker does not need to know \( M \) to create \( C' \). This is considered a vulnerability because the adversary can manipulate encrypted data without breaking the encryption itself.
+Why is malleability a problem?
+
+\begin{enumerate}
+    \item \textbf{Breaking data integrity:} Encryption schemes are often expected to protect both confidentiality and integrity of the plaintext. Malleability breaks this assumption, as it allows attackers to modify data without detection.
+    \item \textbf{Practical attacks:} Malleability can be exploited in protocols that rely on encrypted data. For instance, in electronic payments, malleable encryption could allow an attacker to modify the transaction amount in a secure message.
+\end{enumerate}
+
+\textbf{Example:}
+Suppose we are using a simple additive encryption scheme:
+\[
+C = M + k
+\]
+where \( k \) is the encryption key, \( M \) is the plaintext, and \( C \) is the ciphertext.
+
+An attacker, without knowing \( k \), can modify \( C \) by adding some value \( d \):
+\[
+C' = C + d
+\]
+When \( C' \) is decrypted:
+\[
+M' = C' - k = (M + k + d) - k = M + d
+\]
+Thus, the attacker has changed the plaintext \( M \) to \( M' = M + d \) without needing to know the key \( k \). \\
+
+Mitigating Malleability:
+\begin{enumerate}
+    \item \textbf{Authenticated encryption:} Combine encryption with mechanisms to verify data integrity, such as using a MAC (Message Authentication Code) or digital signatures.
+    \item \textbf{Non-malleable encryption schemes:} Use encryption schemes that inherently prevent modification of ciphertexts to produce related plaintexts. For example, many modern schemes like AES-GCM or RSA-OAEP are designed to be non-malleable.
+\end{enumerate}
 
 \subsection{Random Oracle Model}
 \Comment{Finish later}

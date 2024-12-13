@@ -128,6 +128,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./classnotes.aux
@@ -314,6 +316,14 @@ INPUT ./img/INDcca.png
 INPUT ./img/INDcca.png
 INPUT ./img/INDcca.png
 INPUT ./img/INDcca.png
+INPUT ./lectures/lecture6.tex
+INPUT ./lectures/lecture6.tex
+INPUT ./lectures/lecture6.tex
+INPUT ./img/LFSR.png
+INPUT ./img/LFSR.png
+INPUT ./img/LFSR.png
+INPUT ./img/LFSR.png
+INPUT ./img/LFSR.png
 INPUT classnotes.aux
 INPUT ./classnotes.out
 INPUT ./classnotes.out
