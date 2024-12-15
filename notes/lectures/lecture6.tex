@@ -73,45 +73,6 @@ The initial state is very important, as it determines the entire sequence (whole
     \item Efficiency: LFSRs are computationally efficient, using only shift and XOR operations.
 \end{itemize}
 
-\subsubsection{Mathematical Expression}
-Cell is tapped or not:
-\[
-[c_1, c_2, \dots, c_L]
-\]
-
-Initial state of the registers:
-\[
-[s_{L-1}, \dots, s_1, s_0]
-\]
-
-Output:
-\[
-[s_0, s_1, s_2, s_3, \dots, s_{L-1}, s_L, s_{L+1}, \dots]
-\]
-
-Then, for \(j \geq L\):
-\[
-s_j = c_1 \cdot s_{j-1} \oplus c_2 \cdot s_{j-2} \oplus \cdots \oplus c_L \cdot s_{j-L}.
-\]
-
-However, we need to see a repetition after a certain period, \(N\), such that:
-\[
-s_{N+i} = s_i.
-\]
-
-\(N\) can be maximum \(2^L - 1\). \\
-
-The \textbf{connection polynomial} $C(X)$ describes how the bits stored in the LFSR are combined to produce the feedback bit, which determines the next state of the LFSR. It is defined as:
-
-\[ C(X) = 1 + c_1 \cdot X + c_2 \cdot X^2 + \dots + c_L \cdot X^L \in \mathbb{F}_2\left[X \right] \]
-
-where $\mathbb{F}_2\left[X \right]$ is the set of polynomials over the binary field (coefficients are either 0 or 1). Proper choice of $C(X)$ can result in a maximal period of $2^L - 1$.\\
-
-The \textbf{characteristic polynomial} $G(X)$ describes the LFSR's output sequence and the polynomial that can be used to generate the entire sequence of output bits. It is a function of the feedback logic defined by the connection polynomial.
-
-\[ G(X) = X^L \cdot C(1/X) \]
-
-
 \subsubsection{Feedback Functions}
 Feedback functions in shift registers are used to compute the new bit that is fed back into the register. The key difference between linear and nonlinear feedback functions lies in how they combine the bits from the register.
 
@@ -169,3 +130,173 @@ Avoiding the Zero State:
     \item Nonlinear Feedback Functions: Nonlinear systems often include mechanisms to avoid degenerative states like zero, introducing additional complexity to prevent such behavior.
     \item External Checks: Some systems include checks to ensure that a zero state is never reached, restarting the LFSR with a valid non-zero state if necessary.
 \end{enumerate}
+
+\subsubsection{Mathematical Expression}
+Cell is tapped or not (content of the cell contributes to the feedback function yes or no):
+\[
+[c_1, c_2, \dots, c_L]
+\]
+
+Initial state of the registers:
+\[
+[s_{L-1}, \dots, s_1, s_0]
+\]
+
+Output:
+\[
+[s_0, s_1, s_2, s_3, \dots, s_{L-1}, s_L, s_{L+1}, \dots]
+\]
+
+Then, for \(j \geq L\):
+\[
+s_j = c_1 \cdot s_{j-1} \oplus c_2 \cdot s_{j-2} \oplus \cdots \oplus c_L \cdot s_{j-L}.
+\]
+
+However, we need to see a repetition after a certain period, \(N\), such that:
+\[
+s_{N+i} = s_i.
+\]
+
+\(N\) can be maximum \(2^L - 1\). \\
+
+The \textbf{connection polynomial} $C(X)$ describes how the bits stored in the LFSR are combined to produce the feedback bit, which determines the next state of the LFSR. It is defined as:
+
+\[ C(X) = 1 + c_1 \cdot X + c_2 \cdot X^2 + \dots + c_L \cdot X^L \in \mathbb{F}_2\left[X \right] \]
+
+where $\mathbb{F}_2\left[X \right]$ is the set of polynomials over the binary field (coefficients are either 0 or 1). Proper choice of $C(X)$ can result in a maximal period of $2^L - 1$.\\
+
+The \textbf{characteristic polynomial} $G(X)$ describes the LFSR's output sequence and the polynomial that can be used to generate the entire sequence of output bits. It is a function of the feedback logic defined by the connection polynomial.
+
+\[ G(X) = X^L \cdot C(1/X) \]
+
+\textbf{Example:}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/lfsr1.png}
+        \caption{$X^3 + X + 1$}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/lfsr2.png}
+        \caption{$X^{32} + X^3 + X + 1$}
+    \end{subfigure}
+    \caption{Linear Feedback Shift Register Examples}
+    \label{fig:lfsr-examples}
+\end{figure}
+
+\begin{itemize}
+    \item[a)] This is a small LFSR with length $L=3$, described by the connection polynomial $C(X) = X^3 + X + 1$. There are 3 registers: $s_0, s_1, s_2$. The feedback function involves: $X^3$ (feedback from the last register), $X$ (feedback from the first register), and a constant 1. At each step, the contents of the tapped cells ($s_2, s_0$) are XOR-ed to produce a new bit.
+    \item[b)] This is a much larger LFSR with length $L=32$, described by the connection polynomial $C(X) = X^{32} + X^3 + X + 1$. There are 32 registers. The feedback function involves the 32nd (last) register, the 3rd register, the 1st register, and a constant 1. The characteristic polynomial $G(X)$ is used to generate the entire output sequence. \Comment{I dont get the exp values for this one??}
+\end{itemize}
+
+Note: The connection polynomial determines which registers contribute to the feedback. But is not a direct description of the output stream itself. Instead, it describes the feedback mechanism of the LFSR. \\
+
+How do we know that the feedback function is a good one, such that we achieve the maximum length before the stream cipher repeats itself?
+
+\subsubsection{Primitive Polynomial}
+\begin{defn}
+A \emph{primitive polynomial} is a polynomial that generates a maximal-length sequence in a finite field, particularly in the context of binary fields $\mathbb{F}_2$ (i.e., polynomials whose coefficients are either 0 or 1). Specifically, for a polynomial to be \textit{primitive}, it must satisfy the following conditions:
+
+\begin{itemize}
+    \item The polynomial must be \textbf{irreducible} over $\mathbb{F}_2$ (i.e., it cannot be factored into the product of lower-degree polynomials with coefficients in $\mathbb{F}_2$).
+    \item The polynomial must generate a sequence that cycles through all the nonzero elements of the finite field $\mathbb{F}_{2^L}$, where $L$ is the degree of the polynomial.
+\end{itemize}
+    
+In simpler terms, a primitive polynomial produces a sequence of numbers that goes through all possible states except the zero state (when viewed as an LFSR) before repeating.
+\end{defn}
+
+When used in LFSRs, primitive polynomials ensure that the generated sequence has a \emph{maximum length} before it repeats. The length of the sequence is $2^L -1$, where $L$ is the degree of the polynomial.
+
+\begin{thm}
+    If N is the period, then the characteristic polynomial $f(x)$ is a factor of $1-X^N$. 
+\end{thm}
+
+
+\[ C(X) = 1 + c_1 \cdot X + c_2 \cdot X^2 + \dots + c_L \cdot X^L \in \mathbb{F}_2\left[X \right] \]
+
+Conditions for $C(X)$:
+\begin{itemize}
+    \item The highest coefficient $c_L$ = 0: the polynomial is singular. This means that $C(X)$ is not a full degree of $L$ and cannot properly generate sequences of maximal length in an LFSR.
+    \item The highest coefficient $c_L$ = 1: the polynomial is non-singular. $C(X)$ is a full degree of $L$ and there is a periodicity in the sequences generated by the polynomial. The behaviour of the sequence depends on whether $C(X)$ is irreducible or not.
+\end{itemize}
+
+$C(X)$ is irreducible if it cannot be factored into smaller polynomials over $\mathbb{F}_2\left[X \right]$ (other than itself and 1).
+Then, the period of the sequence generated by the LFSR is the \emph{smallest} N such that $C(X)$ divides $1 + X^N$.
+$N$ will satisfy $N | (2^L-1)$. \\
+
+\textbf{Example:}
+3 registers, maximum length is 7:
+\[m = 3, p = 2^3 -1 = 7\] 
+So we need to find the factors of:
+\[1 - x^y = (1-x)(1 + x + x^3)(1 + x^2 + x^3)\]
+
+The divisors of this polynomial (irreducible polynomials) will have a period of 7.
+
+\subsection{Period}
+
+The presence of disjoint cycles in an LFSR, such as in figure \ref{fig:lfsr-period}, has implications for randomness:
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/lfsrperiod1.png}
+        \caption{$X^4+X^3 + X^2 + 1$}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/lfsrperiod2.png}
+        \caption{$X^4 + X + 1$}
+    \end{subfigure}
+    \caption{State transitions of 4-bit LFSRs with connection polynomials}
+    \label{fig:lfsr-period}
+\end{figure}
+
+\begin{itemize}
+    \item The output sequence splits into two disjoint cycles of length 7 instead of a single cycle of length \( 2^L - 1 \) (15 for \( L = 4 \)).
+    \item Reduced Period: The sequence repeats earlier, reducing the overall period and uniformity.
+    \item Loss of Randomness: Missing states lead to gaps, making the sequence predictable and non-random.
+    \item Cause: The connection polynomial is \textit{not primitive}, preventing the LFSR from achieving a maximum-length sequence.
+\end{itemize}
+
+The right polynomial results in a big cycle with all states included, except for the zero state, as expected.
+
+\subsection{Security of LFSRs}
+With $L$ registers and $2L$ known output bits, the connection polynomial can be revealed. It is a linear system. If you have sufficient equations, you can solve the linear system.
+\begin{itemize}
+    \item First $L$ bits reveal the $s$ values
+    \item We need to learn $L$ unknowns: $c$ values
+\end{itemize}
+
+\[ s_j = \sum^L_{i=1} c_i \cdot s_{j-i} \pmod{2} \]
+
+Therefore, LFSRs are not secure!
+
+\Comment{Linear complexity notes here}
+
+\subsection{Combining LFSRs}
+LFSR-based stream ciphers are very fast ciphers, suitable for implementation in hardware, to encrypt real-time data such as voice or video. But they need to be augmented with a method to produce a form of non-linear output.
+
+Create fast and secure non-linear behaviour by combining multiple LFSRs into a non-linear combination function: 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/combinelfsr.png}
+    \caption{Combining LFSRs}
+\end{figure}
+
+\subsubsection{Non-linear Combiners}
+Examples covered in lecture are:
+\begin{itemize}
+    \item Alternating-step generator
+    \item Shrinking generator
+    \item A5/1
+    \item Trivium
+    \item RC4
+\end{itemize}
+\Comment{How much do we need to know about these?}

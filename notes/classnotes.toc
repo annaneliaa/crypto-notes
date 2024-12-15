@@ -67,6 +67,11 @@
 \contentsline {subsection}{\numberline {6.1}Stream Ciphers}{33}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Linear Feedback Shift Registers (LFSRs)}{33}{subsection.6.2}%
 \contentsline {subsubsection}{\numberline {6.2.1}Properties of LFSRs}{34}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Mathematical Expression}{34}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Feedback Functions}{35}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}Zero State in Feedback Functions:}{35}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.2}Feedback Functions}{34}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Zero State in Feedback Functions:}{35}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Mathematical Expression}{35}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Primitive Polynomial}{36}{subsubsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.3}Period}{37}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Security of LFSRs}{38}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Combining LFSRs}{38}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Non-linear Combiners}{38}{subsubsection.6.5.1}%
