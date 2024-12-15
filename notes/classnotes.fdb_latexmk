@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1734267642.44678 "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" "classnotes.pdf" "classnotes" 1734267644.35346 0
-  "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" 1734100134.42596 1296 d145c3b10ca00ce065004493279ef764 ""
+["pdflatex"] 1734267702.95133 "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" "classnotes.pdf" "classnotes" 1734267704.78557 0
+  "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" 1734267700.84389 1360 1df735a696cebbe72040b07a897149a7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -139,10 +139,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1731759341.66087 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731759331 8221437 9c99fe9db5777ba97135d51eeed75aed ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "classnotes.aux" 1734267644.24519 13984 9a14698df2fc838bd27470a451470055 "pdflatex"
-  "classnotes.out" 1734267644.24686 12740 ede888a145f814f29eb93f348cbf53c8 "pdflatex"
-  "classnotes.tex" 1734100134.42596 1296 d145c3b10ca00ce065004493279ef764 ""
-  "classnotes.toc" 1734267644.24712 7008 88cbf7ee0fc2911d03c049a90c4998ef "pdflatex"
+  "classnotes.aux" 1734267704.68422 14091 028f67a43464070329baf752d67f97b7 "pdflatex"
+  "classnotes.out" 1734267704.68595 12832 41c7badfe0b07f03eb3f16c87c42624b "pdflatex"
+  "classnotes.tex" 1734267700.84389 1360 1df735a696cebbe72040b07a897149a7 ""
+  "classnotes.toc" 1734267704.68624 7074 1b532159c95e38ff520f27eee87686d4 "pdflatex"
   "img/INDcca.png" 1733933074.46745 92354 910b3b9df170eaff29fe536cea467a3b ""
   "img/LFSR.png" 1734098394.34623 95401 c002d2a61e2f2a55e21671d6fa5288f7 ""
   "img/MRprimetest.png" 1732115598.91359 103150 7dfef0f732f42195cd630c5a076edb0b ""
@@ -171,6 +171,7 @@
   "lectures/lecture4.tex" 1733410246.9649 13338 3b96eac1e46cb569a623aad730c92fc9 ""
   "lectures/lecture5.tex" 1734005307.48673 20672 a97523ff93dd41fccb99047c9fedcde7 ""
   "lectures/lecture6.tex" 1734267642.20948 16154 068d5763f000726aa4240cebd186eaa2 ""
+  "lectures/lecture7.tex" 1734267699.04928 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "classnotes.aux"
   "classnotes.log"

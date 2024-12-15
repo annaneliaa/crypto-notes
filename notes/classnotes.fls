@@ -356,6 +356,9 @@ INPUT ./img/combinelfsr.png
 INPUT ./img/combinelfsr.png
 INPUT ./img/combinelfsr.png
 INPUT ./img/combinelfsr.png
+INPUT ./lectures/lecture7.tex
+INPUT ./lectures/lecture7.tex
+INPUT ./lectures/lecture7.tex
 INPUT classnotes.aux
 INPUT ./classnotes.out
 INPUT ./classnotes.out
