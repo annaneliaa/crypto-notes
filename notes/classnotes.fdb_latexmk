@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1734358198.55279 "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" "classnotes.pdf" "classnotes" 1734358200.41239 0
+["pdflatex"] 1734364668.33764 "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" "classnotes.pdf" "classnotes" 1734364670.33962 0
   "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" 1734267700.84389 1360 1df735a696cebbe72040b07a897149a7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -139,10 +139,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1731759341.66087 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731759331 8221437 9c99fe9db5777ba97135d51eeed75aed ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "classnotes.aux" 1734358200.31226 15561 e85437221cfea4cca3cdc1e3f4d336be "pdflatex"
-  "classnotes.out" 1734358200.31403 14334 d41a22f84b119d35cf66cf75c6b3d0e6 "pdflatex"
+  "classnotes.aux" 1734364670.23927 17331 bfa7abb70534c668306b132ad9a59532 "pdflatex"
+  "classnotes.out" 1734364670.24099 15041 c4e8046f2d70937dd2cc03ebb710eff5 "pdflatex"
   "classnotes.tex" 1734267700.84389 1360 1df735a696cebbe72040b07a897149a7 ""
-  "classnotes.toc" 1734358200.31427 7901 589b0fb219fbfdd393a83ff560dc15eb "pdflatex"
+  "classnotes.toc" 1734364670.24126 8415 f76f428794797889000c1e846ef53131 "pdflatex"
   "img/INDcca.png" 1733933074.46745 92354 910b3b9df170eaff29fe536cea467a3b ""
   "img/LFSR.png" 1734098394.34623 95401 c002d2a61e2f2a55e21671d6fa5288f7 ""
   "img/MRprimetest.png" 1732115598.91359 103150 7dfef0f732f42195cd630c5a076edb0b ""
@@ -154,8 +154,10 @@
   "img/PRFfinal.png" 1733846504.72994 118067 723671507ec84431f7a768ef6620d240 ""
   "img/blockcipher.png" 1734356135.08611 153268 3a5463ebcb9443e04ca4321182cbbf45 ""
   "img/combinelfsr.png" 1734265175.02828 174442 8c2edc3a4b810d0c9e9476acedec22a3 ""
+  "img/des.png" 1734363242.05865 77126 c600e903384b7701affb6655c48b4ac6 ""
   "img/ecadd.png" 1732627004.0219 41826 7286029624b71957d65486e04b3f7d3c ""
   "img/entropy.png" 1733326369.76323 208299 68753076b6adff0acbe43b4d1f2a90b0 ""
+  "img/feistel.png" 1734361719.55031 78240 aeefc4bc856b146f0f66cbe8075f8d04 ""
   "img/fermatprimetest.png" 1732114778.74916 48027 4787882ef7c6378ca59e512e65119adc ""
   "img/game-factor.png" 1733843620.41096 66400 421b4b703b44a85138cf50ecf01eccc7 ""
   "img/lfsr1.png" 1734182994.8803 50372 d39c4b8cdb2f651f36e60f672f7b13dc ""
@@ -164,6 +166,7 @@
   "img/lfsrperiod2.png" 1734264589.80997 206823 b90e8ce64effb0bd889457c0824c09c5 ""
   "img/permcipher.png" 1732717829.21045 104207 4ff77736eb8dea1b9c180b204beff5fd ""
   "img/pointdoubling.png" 1732627004.01539 37680 041ff18a276289f3f424eca544bae77f ""
+  "img/spn.png" 1734361873.81476 42557 9eb3cce5dc7891173d8dc6ee3fc84c4e ""
   "img/w1encryption.png" 1731763460.41773 53364 6e8fa49e47081ca6252ff130249801df ""
   "img/zeropoint.png" 1732627268.87453 35522 008a8721fa151c0796f057c16be280dd ""
   "lectures/lecture1.tex" 1734005098.69352 5695 ebf2d0069e36b69386b2483db775a037 ""
@@ -172,7 +175,7 @@
   "lectures/lecture4.tex" 1733410246.9649 13338 3b96eac1e46cb569a623aad730c92fc9 ""
   "lectures/lecture5.tex" 1734005307.48673 20672 a97523ff93dd41fccb99047c9fedcde7 ""
   "lectures/lecture6.tex" 1734267642.20948 16154 068d5763f000726aa4240cebd186eaa2 ""
-  "lectures/lecture7.tex" 1734358198.34967 4712 bb2df97655702f78031fd7e987d1c77e ""
+  "lectures/lecture7.tex" 1734364666.06509 10369 7331536dacf44c26446dbbc383ef84ac ""
   (generated)
   "classnotes.aux"
   "classnotes.log"

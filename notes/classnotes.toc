@@ -81,7 +81,13 @@
 \contentsline {subsubsection}{\numberline {7.1.2}Design}{40}{subsubsection.7.1.2}%
 \contentsline {subsubsection}{\numberline {7.1.3}The Avalanche Effect}{40}{subsubsection.7.1.3}%
 \contentsline {subsection}{\numberline {7.2}Feistel Ciphers}{40}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Data Encryption Standard (DES)}{40}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Key Scheduling}{40}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Security of DES}{40}{subsubsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.4}Advanced Encryption Standard (AES)}{40}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.2.1}Encryption}{41}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Decryption}{41}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Data Encryption Standard (DES)}{42}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Function $F$}{43}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}S-boxes}{43}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}P-box}{43}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Key Scheduling}{43}{subsubsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.5}Security of DES}{43}{subsubsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.4}Advanced Encryption Standard (AES)}{43}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Modes of Operation}{43}{subsection.7.5}%
