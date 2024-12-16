@@ -359,6 +359,11 @@ INPUT ./img/combinelfsr.png
 INPUT ./lectures/lecture7.tex
 INPUT ./lectures/lecture7.tex
 INPUT ./lectures/lecture7.tex
+INPUT ./img/blockcipher.png
+INPUT ./img/blockcipher.png
+INPUT ./img/blockcipher.png
+INPUT ./img/blockcipher.png
+INPUT ./img/blockcipher.png
 INPUT classnotes.aux
 INPUT ./classnotes.out
 INPUT ./classnotes.out
