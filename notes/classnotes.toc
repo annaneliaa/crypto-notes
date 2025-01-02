@@ -100,16 +100,22 @@
 \contentsline {subsection}{\numberline {7.6}Modes of Operation}{51}{subsection.7.6}%
 \contentsline {subsubsection}{\numberline {7.6.1}Electronic Codebook (ECB)}{51}{subsubsection.7.6.1}%
 \contentsline {subsubsection}{\numberline {7.6.2}Cipher Block Chaining (CBC)}{51}{subsubsection.7.6.2}%
-\contentsline {subsubsection}{\numberline {7.6.3}Cipher Feedback (CFB)}{51}{subsubsection.7.6.3}%
-\contentsline {subsubsection}{\numberline {7.6.4}Output Feedback (OFB)}{51}{subsubsection.7.6.4}%
-\contentsline {subsubsection}{\numberline {7.6.5}Counter Mode (CTR)}{51}{subsubsection.7.6.5}%
-\contentsline {subsubsection}{\numberline {7.6.6}Security: how to achieve CCA?}{51}{subsubsection.7.6.6}%
-\contentsline {section}{\numberline {8}Lecture 8}{52}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Hash Functions}{52}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Collision Resistance}{52}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Padding}{52}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Merkle-Damg\r ard Construction}{52}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Birthday Paradox}{52}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}MD-family}{52}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}MAC}{52}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Sponge Functions}{52}{subsection.8.8}%
+\contentsline {subsubsection}{\numberline {7.6.3}Output Feedback (OFB)}{52}{subsubsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.4}Cipher Feedback (CFB)}{53}{subsubsection.7.6.4}%
+\contentsline {subsubsection}{\numberline {7.6.5}Counter Mode (CTR)}{53}{subsubsection.7.6.5}%
+\contentsline {subsubsection}{\numberline {7.6.6}Security: how to achieve CCA?}{54}{subsubsection.7.6.6}%
+\contentsline {section}{\numberline {8}Lecture 8}{55}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Hash Functions}{55}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Preimage Resistance}{55}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Collision Resistance}{55}{subsubsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.2}Padding}{56}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Padding Methods}{56}{subsubsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.3}Merkle-Damg\r ard Construction}{57}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}MD Algorithm}{57}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Benefits of MD Construction}{57}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Properties of MD Construction}{57}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}Security properties under different scenarios}{58}{subsubsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.4}MD-4}{58}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Birthday Paradox}{58}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}MAC}{58}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Sponge Functions}{58}{subsection.8.7}%

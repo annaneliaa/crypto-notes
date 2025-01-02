@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  19 DEC 2024 13:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.16)  2 JAN 2025 22:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -478,7 +478,7 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 \openout4 = `classnotes.toc'.
 
  [3] (./lectures/lecture1.tex [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<img/w1encryption.png, id=608, 698.61pt x 213.79875pt>
+<img/w1encryption.png, id=638, 698.61pt x 213.79875pt>
 File: img/w1encryption.png Graphic file (type png)
 <use img/w1encryption.png>
 Package pdftex.def Info: img/w1encryption.png  used on input line 99.
@@ -533,28 +533,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 512--513
  []
 
 [14]
-<img/fermatprimetest.png, id=721, 270.00874pt x 117.43875pt>
+<img/fermatprimetest.png, id=751, 270.00874pt x 117.43875pt>
 File: img/fermatprimetest.png Graphic file (type png)
 <use img/fermatprimetest.png>
 Package pdftex.def Info: img/fermatprimetest.png  used on input line 572.
 (pdftex.def)             Requested size: 189.00482pt x 82.20654pt.
-<img/MRprimetest.png, id=722, 348.30125pt x 254.9525pt>
+<img/MRprimetest.png, id=752, 348.30125pt x 254.9525pt>
 File: img/MRprimetest.png Graphic file (type png)
 <use img/MRprimetest.png>
 Package pdftex.def Info: img/MRprimetest.png  used on input line 581.
 (pdftex.def)             Requested size: 226.39313pt x 165.71715pt.
  [15 <./img/fermatprimetest.png> <./img/MRprimetest.png>]
-<img/ecadd.png, id=733, 236.885pt x 193.72375pt>
+<img/ecadd.png, id=763, 236.885pt x 193.72375pt>
 File: img/ecadd.png Graphic file (type png)
 <use img/ecadd.png>
 Package pdftex.def Info: img/ecadd.png  used on input line 682.
 (pdftex.def)             Requested size: 151.76854pt x 124.11874pt.
-<img/pointdoubling.png, id=734, 254.9525pt x 209.78375pt>
+<img/pointdoubling.png, id=764, 254.9525pt x 209.78375pt>
 File: img/pointdoubling.png Graphic file (type png)
 <use img/pointdoubling.png>
 Package pdftex.def Info: img/pointdoubling.png  used on input line 687.
 (pdftex.def)             Requested size: 151.76854pt x 124.88528pt.
-<img/zeropoint.png, id=735, 219.82124pt x 229.85875pt>
+<img/zeropoint.png, id=765, 219.82124pt x 229.85875pt>
 File: img/zeropoint.png Graphic file (type png)
 <use img/zeropoint.png>
 Package pdftex.def Info: img/zeropoint.png  used on input line 692.
@@ -580,7 +580,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
  []
 
 [19]
-<img/permcipher.png, id=765, 418.56375pt x 209.78375pt>
+<img/permcipher.png, id=795, 418.56375pt x 209.78375pt>
 File: img/permcipher.png Graphic file (type png)
 <use img/permcipher.png>
 Package pdftex.def Info: img/permcipher.png  used on input line 104.
@@ -596,7 +596,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
  []
 
 [22]
-<img/entropy.png, id=790, 552.0625pt x 414.54875pt>
+<img/entropy.png, id=820, 552.0625pt x 414.54875pt>
 File: img/entropy.png Graphic file (type png)
 <use img/entropy.png>
 Package pdftex.def Info: img/entropy.png  used on input line 146.
@@ -625,7 +625,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<img/game-factor.png, id=815, 473.77pt x 174.6525pt>
+<img/game-factor.png, id=845, 473.77pt x 174.6525pt>
 File: img/game-factor.png Graphic file (type png)
 <use img/game-factor.png>
 Package pdftex.def Info: img/game-factor.png  used on input line 50.
@@ -634,12 +634,12 @@ Package pdftex.def Info: img/game-factor.png  used on input line 50.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26]
-<img/PRFbad.png, id=826, 522.95375pt x 297.11pt>
+<img/PRFbad.png, id=856, 522.95375pt x 297.11pt>
 File: img/PRFbad.png Graphic file (type png)
 <use img/PRFbad.png>
 Package pdftex.def Info: img/PRFbad.png  used on input line 81.
 (pdftex.def)             Requested size: 261.47623pt x 148.55463pt.
-<img/PRFfinal.png, id=827, 672.5125pt x 273.02pt>
+<img/PRFfinal.png, id=857, 672.5125pt x 273.02pt>
 File: img/PRFfinal.png Graphic file (type png)
 <use img/PRFfinal.png>
 Package pdftex.def Info: img/PRFfinal.png  used on input line 98.
@@ -649,12 +649,12 @@ Package pdftex.def Info: img/PRFfinal.png  used on input line 98.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [27 <./img/game-factor.png> <./img/PRFbad.png>] [28 <./img/PRFfinal.png>]
-<img/OWgame.png, id=845, 324.21124pt x 121.45375pt>
+<img/OWgame.png, id=876, 324.21124pt x 121.45375pt>
 File: img/OWgame.png Graphic file (type png)
 <use img/OWgame.png>
 Package pdftex.def Info: img/OWgame.png  used on input line 160.
 (pdftex.def)             Requested size: 162.10522pt x 60.72672pt.
-<img/OWpass.png, id=846, 422.57875pt x 154.5775pt>
+<img/OWpass.png, id=877, 422.57875pt x 154.5775pt>
 File: img/OWpass.png Graphic file (type png)
 <use img/OWpass.png>
 Package pdftex.def Info: img/OWpass.png  used on input line 207.
@@ -664,13 +664,13 @@ Package pdftex.def Info: img/OWpass.png  used on input line 207.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29 <./img/OWgame.png>]
-<img/OWCPA.png, id=855, 486.81876pt x 137.51375pt>
+<img/OWCPA.png, id=886, 486.81876pt x 137.51375pt>
 File: img/OWCPA.png Graphic file (type png)
 <use img/OWCPA.png>
 Package pdftex.def Info: img/OWCPA.png  used on input line 227.
 (pdftex.def)             Requested size: 243.40878pt x 68.7567pt.
  [30 <./img/OWpass.png> <./img/OWCPA.png>]
-<img/OWcca.png, id=865, 601.24625pt x 140.525pt>
+<img/OWcca.png, id=895, 601.24625pt x 140.525pt>
 File: img/OWcca.png Graphic file (type png)
 <use img/OWcca.png>
 Package pdftex.def Info: img/OWcca.png  used on input line 266.
@@ -691,7 +691,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 293--294
  []
 
 [31 <./img/OWcca.png>]
-<img/INDcca.png, id=877, 604.2575pt x 192.72pt>
+<img/INDcca.png, id=907, 604.2575pt x 192.72pt>
 File: img/INDcca.png Graphic file (type png)
 <use img/INDcca.png>
 Package pdftex.def Info: img/INDcca.png  used on input line 312.
@@ -717,7 +717,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
  []
 
 [34]
-<img/LFSR.png, id=902, 489.83pt x 107.40125pt>
+<img/LFSR.png, id=932, 489.83pt x 107.40125pt>
 File: img/LFSR.png Graphic file (type png)
 <use img/LFSR.png>
 Package pdftex.def Info: img/LFSR.png  used on input line 63.
@@ -738,12 +738,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
  []
 
 [36]
-<img/lfsr1.png, id=924, 268.00125pt x 107.40125pt>
+<img/lfsr1.png, id=954, 268.00125pt x 107.40125pt>
 File: img/lfsr1.png Graphic file (type png)
 <use img/lfsr1.png>
 Package pdftex.def Info: img/lfsr1.png  used on input line 178.
 (pdftex.def)             Requested size: 227.64894pt x 91.2292pt.
-<img/lfsr2.png, id=925, 602.25pt x 106.3975pt>
+<img/lfsr2.png, id=955, 602.25pt x 106.3975pt>
 File: img/lfsr2.png Graphic file (type png)
 <use img/lfsr2.png>
 Package pdftex.def Info: img/lfsr2.png  used on input line 184.
@@ -758,30 +758,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--230
 
  []
 
-<img/lfsrperiod1.png, id=939, 509.905pt x 258.9675pt>
+<img/lfsrperiod1.png, id=969, 509.905pt x 258.9675pt>
 File: img/lfsrperiod1.png Graphic file (type png)
 <use img/lfsrperiod1.png>
 Package pdftex.def Info: img/lfsrperiod1.png  used on input line 247.
 (pdftex.def)             Requested size: 227.64894pt x 115.61752pt.
-<img/lfsrperiod2.png, id=940, 382.42876pt x 306.14375pt>
+<img/lfsrperiod2.png, id=970, 382.42876pt x 306.14375pt>
 File: img/lfsrperiod2.png Graphic file (type png)
 <use img/lfsrperiod2.png>
 Package pdftex.def Info: img/lfsrperiod2.png  used on input line 253.
 (pdftex.def)             Requested size: 227.64894pt x 182.23953pt.
 [38 <./img/lfsrperiod1.png> <./img/lfsrperiod2.png>]
-<img/combinelfsr.png, id=948, 464.73625pt x 198.7425pt>
+<img/combinelfsr.png, id=978, 464.73625pt x 198.7425pt>
 File: img/combinelfsr.png Graphic file (type png)
 <use img/combinelfsr.png>
 Package pdftex.def Info: img/combinelfsr.png  used on input line 289.
 (pdftex.def)             Requested size: 252.94499pt x 108.16846pt.
 ) [39 <./img/combinelfsr.png>] (./lectures/lecture7.tex
-<img/blockcipher.png, id=955, 446.66875pt x 279.0425pt>
+<img/blockcipher.png, id=985, 446.66875pt x 279.0425pt>
 File: img/blockcipher.png Graphic file (type png)
 <use img/blockcipher.png>
 Package pdftex.def Info: img/blockcipher.png  used on input line 11.
 (pdftex.def)             Requested size: 252.94499pt x 158.02121pt.
  [40 <./img/blockcipher.png>]
-<img/spn.png, id=970, 722.7pt x 957.5775pt>
+<img/spn.png, id=1001, 722.7pt x 957.5775pt>
 File: img/spn.png Graphic file (type png)
 <use img/spn.png>
 Package pdftex.def Info: img/spn.png  used on input line 92.
@@ -791,7 +791,7 @@ Underfull \hbox (badness 1527) in paragraph at lines 93--93
 []\OT1/cmr/m/n/10 Figure 19: |A sketch of a sub-sti-tu-
  []
 
-<img/feistel.png, id=971, 398.48875pt x 242.9075pt>
+<img/feistel.png, id=1002, 398.48875pt x 242.9075pt>
 File: img/feistel.png Graphic file (type png)
 <use img/feistel.png>
 Package pdftex.def Info: img/feistel.png  used on input line 99.
@@ -800,13 +800,13 @@ Package pdftex.def Info: img/feistel.png  used on input line 99.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [41] [42 <./img/spn.png> <./img/feistel.png>]
-<img/des.png, id=994, 301.125pt x 303.1325pt>
+<img/des.png, id=1024, 301.125pt x 303.1325pt>
 File: img/des.png Graphic file (type png)
 <use img/des.png>
 Package pdftex.def Info: img/des.png  used on input line 170.
 (pdftex.def)             Requested size: 177.06458pt x 178.24994pt.
  [43 <./img/des.png>]
-<img/desF.png, id=1004, 754.82pt x 410.53375pt>
+<img/desF.png, id=1034, 754.82pt x 410.53375pt>
 File: img/desF.png Graphic file (type png)
 <use img/desF.png>
 Package pdftex.def Info: img/desF.png  used on input line 200.
@@ -817,7 +817,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
  []
 
 [44 <./img/desF.png>]
-<img/DESkey.png, id=1011, 449.68pt x 544.0325pt>
+<img/DESkey.png, id=1041, 449.68pt x 544.0325pt>
 File: img/DESkey.png Graphic file (type png)
 <use img/DESkey.png>
 Package pdftex.def Info: img/DESkey.png  used on input line 256.
@@ -832,7 +832,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
-<img/3DES.png, id=1024, 377.41pt x 168.63pt>
+<img/3DES.png, id=1054, 377.41pt x 168.63pt>
 File: img/3DES.png Graphic file (type png)
 <use img/3DES.png>
 Package pdftex.def Info: img/3DES.png  used on input line 276.
@@ -852,7 +852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
-<img/AES.png, id=1038, 490.83376pt x 564.1075pt>
+<img/AES.png, id=1068, 490.83376pt x 564.1075pt>
 File: img/AES.png Graphic file (type png)
 <use img/AES.png>
 Package pdftex.def Info: img/AES.png  used on input line 416.
@@ -868,22 +868,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 433--435
  []
 
 [48 <./img/AES.png>]
-<img/addroundkey.png, id=1045, 575.14874pt x 185.69376pt>
+<img/addroundkey.png, id=1075, 575.14874pt x 185.69376pt>
 File: img/addroundkey.png Graphic file (type png)
 <use img/addroundkey.png>
 Package pdftex.def Info: img/addroundkey.png  used on input line 456.
 (pdftex.def)             Requested size: 227.64894pt x 73.49982pt.
-<img/subbytes.png, id=1046, 521.95pt x 197.73875pt>
+<img/subbytes.png, id=1076, 521.95pt x 197.73875pt>
 File: img/subbytes.png Graphic file (type png)
 <use img/subbytes.png>
 Package pdftex.def Info: img/subbytes.png  used on input line 462.
 (pdftex.def)             Requested size: 227.64894pt x 86.24496pt.
-<img/shiftrows.png, id=1047, 479.7925pt x 280.04625pt>
+<img/shiftrows.png, id=1077, 479.7925pt x 280.04625pt>
 File: img/shiftrows.png Graphic file (type png)
 <use img/shiftrows.png>
 Package pdftex.def Info: img/shiftrows.png  used on input line 468.
 (pdftex.def)             Requested size: 227.64894pt x 132.87378pt.
-<img/mixcolumns.png, id=1048, 429.605pt x 190.7125pt>
+<img/mixcolumns.png, id=1078, 429.605pt x 190.7125pt>
 File: img/mixcolumns.png Graphic file (type png)
 <use img/mixcolumns.png>
 Package pdftex.def Info: img/mixcolumns.png  used on input line 474.
@@ -894,42 +894,121 @@ Underfull \hbox (badness 10000) in paragraph at lines 482--483
  []
 
 [49 <./img/addroundkey.png> <./img/subbytes.png> <./img/shiftrows.png> <./img/mixcolumns.png>]
-<img/AESkeyschedule.png, id=1059, 615.29875pt x 234.8775pt>
+<img/AESkeyschedule.png, id=1089, 615.29875pt x 234.8775pt>
 File: img/AESkeyschedule.png Graphic file (type png)
 <use img/AESkeyschedule.png>
 Package pdftex.def Info: img/AESkeyschedule.png  used on input line 511.
 (pdftex.def)             Requested size: 252.94499pt x 96.55486pt.
-<img/AESencrypt.png, id=1060, 371.3875pt x 264.99pt>
+<img/AESencrypt.png, id=1090, 371.3875pt x 264.99pt>
 File: img/AESencrypt.png Graphic file (type png)
 <use img/AESencrypt.png>
 Package pdftex.def Info: img/AESencrypt.png  used on input line 521.
 (pdftex.def)             Requested size: 202.3529pt x 144.38231pt.
-<img/AESdecrypt.png, id=1061, 360.34625pt x 257.96375pt>
+<img/AESdecrypt.png, id=1091, 360.34625pt x 257.96375pt>
 File: img/AESdecrypt.png Graphic file (type png)
 <use img/AESdecrypt.png>
 Package pdftex.def Info: img/AESdecrypt.png  used on input line 526.
 (pdftex.def)             Requested size: 202.3529pt x 144.8602pt.
- [50 <./img/AESkeyschedule.png> <./img/AESencrypt.png> <./img/AESdecrypt.png>]) [51] (./lectures/lecture8.tex) [52] (./classnotes.aux)
+ [50 <./img/AESkeyschedule.png> <./img/AESencrypt.png> <./img/AESdecrypt.png>] [51]
+Underfull \hbox (badness 10000) in paragraph at lines 621--622
+
+ []
+
+<img/output-feedback-mode.png, id=1106, 633.86812pt x 569.87906pt>
+File: img/output-feedback-mode.png Graphic file (type png)
+<use img/output-feedback-mode.png>
+Package pdftex.def Info: img/output-feedback-mode.png  used on input line 627.
+(pdftex.def)             Requested size: 202.3529pt x 181.92154pt.
+<img/cipher-feedback-mode.png, id=1107, 633.86812pt x 569.87906pt>
+File: img/cipher-feedback-mode.png Graphic file (type png)
+<use img/cipher-feedback-mode.png>
+Package pdftex.def Info: img/cipher-feedback-mode.png  used on input line 633.
+(pdftex.def)             Requested size: 202.3529pt x 181.92154pt.
+[52 <./img/output-feedback-mode.png> <./img/cipher-feedback-mode.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 698--699
+
+ []
+
+[53]
+<img/counter-mode.png, id=1126, 633.86812pt x 569.87906pt>
+File: img/counter-mode.png Graphic file (type png)
+<use img/counter-mode.png>
+Package pdftex.def Info: img/counter-mode.png  used on input line 738.
+(pdftex.def)             Requested size: 202.3529pt x 181.92154pt.
+) [54 <./img/counter-mode.png>] (./lectures/lecture8.tex
+<img/2ndpreimage.png, id=1135, 482.80376pt x 172.645pt>
+File: img/2ndpreimage.png Graphic file (type png)
+<use img/2ndpreimage.png>
+Package pdftex.def Info: img/2ndpreimage.png  used on input line 30.
+(pdftex.def)             Requested size: 177.06458pt x 63.31653pt.
+<img/col_resistance.png, id=1136, 446.66875pt x 153.57375pt>
+File: img/col_resistance.png Graphic file (type png)
+<use img/col_resistance.png>
+Package pdftex.def Info: img/col_resistance.png  used on input line 46.
+(pdftex.def)             Requested size: 177.06458pt x 60.87772pt.
+ [55 <./img/2ndpreimage.png> <./img/col_resistance.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+[56]
+<img/MDconstruction.png, id=1157, 786.94pt x 200.75pt>
+File: img/MDconstruction.png Graphic file (type png)
+<use img/MDconstruction.png>
+Package pdftex.def Info: img/MDconstruction.png  used on input line 114.
+(pdftex.def)             Requested size: 252.94499pt x 64.52618pt.
+<img/MDalgorithm.png, id=1158, 803.0pt x 197.73875pt>
+File: img/MDalgorithm.png Graphic file (type png)
+<use img/MDalgorithm.png>
+Package pdftex.def Info: img/MDalgorithm.png  used on input line 130.
+(pdftex.def)             Requested size: 303.53708pt x 74.74625pt.
+ [57 <./img/MDconstruction.png> <./img/MDalgorithm.png>]
+<img/md4.png, id=1168, 407.5225pt x 354.32375pt>
+File: img/md4.png Graphic file (type png)
+<use img/md4.png>
+Package pdftex.def Info: img/md4.png  used on input line 180.
+(pdftex.def)             Requested size: 204.88264pt x 178.13461pt.
+<img/md4steps.png, id=1169, 330.23375pt x 333.245pt>
+File: img/md4steps.png Graphic file (type png)
+<use img/md4steps.png>
+Package pdftex.def Info: img/md4steps.png  used on input line 186.
+(pdftex.def)             Requested size: 204.88264pt x 206.75722pt.
+) [58 <./img/md4.png> <./img/md4steps.png>] (./classnotes.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `classnotes.out' has not changed.
-(rerunfilecheck)             Checksum: 2596704F8A30AD7334457D4519282875;18686.
+(rerunfilecheck)             Checksum: 47618DF06179689C2BDC5BBFC06DE638;19859.
  ) 
 Here is how much of TeX's memory you used:
- 13370 strings out of 474116
- 211037 string characters out of 5743681
+ 13481 strings out of 474116
+ 213338 string characters out of 5743681
  1949187 words of memory out of 5000000
- 35178 multiletter control sequences out of 15000+600000
+ 35248 multiletter control sequences out of 15000+600000
  572409 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,844b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on classnotes.pdf (52 pages, 3041486 bytes).
+Output written on classnotes.pdf (58 pages, 3442814 bytes).
 PDF statistics:
- 1265 PDF objects out of 1440 (max. 8388607)
- 1074 compressed objects within 11 object streams
- 339 named destinations out of 1000 (max. 500000)
- 1106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1373 PDF objects out of 1440 (max. 8388607)
+ 1160 compressed objects within 12 object streams
+ 380 named destinations out of 1000 (max. 500000)
+ 1199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
