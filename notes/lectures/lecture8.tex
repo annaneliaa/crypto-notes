@@ -161,27 +161,25 @@ Thus, MD-based hash function should \emph{not} use padding method 0. Use method 
     
     \item \textbf{\( f_k \) is from a PRF family, \( s \) is fixed:}
     \begin{itemize}
-        \item In this case, \( f_k \) comes from a \textbf{Pseudorandom Function (PRF) family}, and \( s \) (the initial value) is fixed.
+        \item In this case, \( f_k \) comes from a \textbf{PRF family}, and \( s \) (the initial value) is fixed.
         \item If \( f \) is \textbf{CR secure} (Collision-Resistant), then \( H_k(m) \), constructed using the MD process, is also collision-resistant. However, this setup has limited practical implications.
         \item \textbf{Practical Use:} This is more of a theoretical observation, as using a PRF family for \( f_k \) doesn’t add significant value for hashing in practice.
     \end{itemize}
 \end{enumerate}
 
 \subsection{MD-4}
-MD-family is a series of hash functions: MD construction with a (fixed) \emph{unkeyed} compression function $f$.
-
-
-MD-4 (128-bit output) function f has 3 rounds of 16 steps each.
+MD-family is a series of hash functions: MD construction with a (fixed) \emph{unkeyed} compression function $f$. 
+In MD-4 (128-bit output), the function f has 3 rounds of 16 steps each.
 
 \begin{figure}[h!]
     \centering
-    \begin{subfigure}{0.45\textwidth}
+    \begin{subfigure}{0.4\textwidth}
         \centering
         \includegraphics[width=0.9\textwidth]{img/md4.png}
         \caption{MD-4 compression function}
     \end{subfigure}
     \hfill
-    \begin{subfigure}{0.45\textwidth}
+    \begin{subfigure}{0.4\textwidth}
         \centering
         \includegraphics[width=0.9\textwidth]{img/md4steps.png}
         \caption{Steps in MD-4}
@@ -189,12 +187,204 @@ MD-4 (128-bit output) function f has 3 rounds of 16 steps each.
     \caption{MD-4 Compression Function and Steps}
 \end{figure}
 
+MD-4 is not secure, and should not be used in cryptographic applications. Vulnerable to collision attacks, these days collisions can be found in seconds. Also weak against (second) preimage attacks. \\
+Risks associated with MD-4:
+\begin{itemize}
+    \item Digital signatures: If MD4 is used in signatures, an attacker can create fake documents with valid signatures by exploiting collisions.
+    \item Data integrity: MD4 cannot reliably ensure data integrity, as attackers can manipulate data without detection.
+\end{itemize}
 
-
+MD4 has been superseded by much stronger algorithms, such as:
+\begin{itemize}
+    \item MD5 (although MD5 is also now considered insecure)
+    \item SHA-1 (also insecure, with known collision attacks since 2017)
+    \item SHA-2 and SHA-3 (currently secure)
+\end{itemize}
 
 \subsection{Birthday Paradox}
+The \textbf{birthday paradox} refers to the counterintuitive probability that in a group of just 23 people, there is about a 50\% chance that two of them share the same birthday.
 
+\subsubsection{Why does this happen?}
+\begin{itemize}
+    \item Instead of calculating the chance of one specific match, we consider \textbf{any pair} of people matching, which grows quickly as the group size increases.
+    \item The total number of pairs increases exponentially with the number of people:
+    \[
+    \binom{n}{2} = \frac{n(n-1)}{2}.
+    \]
+\end{itemize}
 
-\subsection{MAC}
+Given a set of $t \geq 10$ elements, take a sample of size $k$ (drawn with repetition) in order to get a probability $/geq \frac{1}{2}$ on a collision. $k$ has to be larger than $1.2\sqrt{t}$.
+Consequence: if $F: A \rightarrow B$ is a random function, and $\#A >> \#B$, then one can expect a collision after $\sqrt{\#B}$ random function calls. 
+
+\subsubsection{In Cryptography}
+\begin{itemize}
+    \item The birthday paradox is used to explain the likelihood of \textbf{collisions} in hash functions.
+    \item For a hash function with \( n \)-bit outputs:
+    \begin{itemize}
+        \item A collision is expected after approximately \( \sqrt{2^n} \) hashes, i.e., \( \approx 2^{n/2} \), due to the birthday paradox.
+    \end{itemize}
+    \item This highlights why hash functions need \textbf{large output sizes} (e.g., 256 bits) to prevent collisions.
+\end{itemize}
+
+\subsubsection{Random vs. Meaningful Birthdaying}
+\begin{defn}
+    \textbf{Random Birthdaying:} searching for any two inputs that produce the same output in a hash function, without any specific requirements on the inputs. Do an exhaustive search on $1/2n$ bits. The messages will be random and not meaningful. 
+    Demonstrates the general weakness of a hash function if collisions can be found easily.
+\end{defn}
+
+\begin{defn}
+    \textbf{Meaningful Birthdaying:}  finding a collision where at least one of the inputs has specific, meaningful content. 
+    Start with two meaningful messages $m_1, m_2$ for which you want to find a collision.
+    Identify $1/2n$ independent positions where the messages can be changed at bit-level without changing the meaning, e.g. tab—space, space—newline, etc. Do random search on those positions.
+\end{defn}
+
+\textbf{Note:} these are brute-force attacks.
+\Comment{add an example here?}
+
+\subsubsection{Implementing Birthdaying}
+\begin{itemize}
+    \item \textbf{Naïve}
+    \begin{itemize}
+        \item Store \( 2^{n/2} \) possible messages for \( m_1 \) and \( 2^{n/2} \) possible messages for \( m_2 \) and check all \( 2 \) pairs.
+    \end{itemize}
+    
+    \item \textbf{Less naïve}
+    \begin{itemize}
+        \item Store \( 2^{n/2} \) possible messages for \( m_1 \), and for each possible \( m_2 \), check whether its hash is in the list.
+    \end{itemize}
+    
+    \item \textbf{Smart:} Pollard-\(\rho\) with Floyd’s cycle-finding algorithm
+    \begin{itemize}
+        \item Computational complexity still \( O(2^{n/2}) \) – but only constant small storage required.
+    \end{itemize}
+\end{itemize}
+
+\subsection{MAC and HMAC}
+HMAC (Hash-based Message Authentication Code) is a cryptographic algorithm used to ensure both the integrity and authenticity of a message. 
+It combines a cryptographic hash function (like SHA-256) with a secret key.
+
+\subsubsection{Insecurity of Naïve Keyed Hash Construction}
+A naïve attempt to create a keyed hash using an \emph{unkeyed} hash function is:
+
+\[ t=H(k|| m || \text{pad}_i(|k|+|m|,b)) \]
+
+where
+\begin{itemize}
+    \item $H$: unkeyed hash function
+    \item $k$: secret key
+    \item $m$: message
+    \item pad$_i$: padding to ensure the input meets the block size of 
+    \item This approach involves concatenating the key $k$, message $m$ and some padding before hashing.
+\end{itemize}
+
+The digest $t$ is then computed as:
+
+\[ t=MD[f, s](k|| m || \text{pad}_i(|l|+|m|,l)) \]
+
+where $MD[f, s]$ is the MD-hash function, and $l$ is the intermediate state. \\
+
+The adversary can exploit this construction. If she can query $t$, she can then construct valid keyed hashes by appending additional data $m'$ to the message $m$.
+This is called a \textbf{length extension attack}. Without knowing the secret key $k$, the attacker can extend the hash to new messages and generate valid keyed hashes. \\
+
+A valid keyed hash for the new message can be computed as:
+
+\[ m || pad_i(|l|+|m|,l) || m' \]
+
+This construction allows an attacker to manipulate and extend the authenticated data.
+
+\Comment{remove first block (key k), append corrupted message m'??}
+
+\subsubsection{Secure Keyed Hash Construction}
+We use nested MAC to construct a secure keyed hash function. The construction is as follows:
+
+\[ \text{NMAC}_{k_1, k_2}(m) = F_{k_1} (F_{k_2}(m)) \]
+\[ F_{k_1} = f((x || \text{pad}_2(l + |x|, l)) || k_1) = MD[f, k_1]^*(x)\]
+\[ G_{k_2} = MD[f, k_2]^*(m) \]
+
+But, we want one hash function with one key, so we construct HMAC as follows:
+
+\[ \text{HMAC}_k(m) = H\left( (k \oplus \text{opad}) || H\left( (k \oplus \text{ipad}) || m \right) \right) \]
+\[ = MD[f , IV ] ((k \oplus \text{opad}) ‖MD[f , IV ] ((k \oplus \text{ipad})) ||m )\]
+
+or simplified:
+
+\[ \text{Inner hash} = H(\text{ipad} || M) \]
+\[ \text{HMAC} = H(\text{opad} || \text{Inner hash}) \]
+
+\newpage
+
+Steps in the process:
+\begin{enumerate}
+  \item \textbf{Key Preparation}:
+  \begin{itemize}
+    \item If the key is longer than the block size of the hash function, it is hashed first to reduce its size.
+    \item If the key is shorter than the block size, it is padded with zeros to match the block size.
+  \end{itemize}
+  
+  \item \textbf{Inner Hash Calculation}:
+  \begin{itemize}
+    \item XOR the key with a padding called the \textit{inner pad} (ipad).
+    \item Concatenate the result with the original message.
+    \item Hash the resulting data using the chosen hash function.
+  \end{itemize}
+  
+  \item \textbf{Outer Hash Calculation}:
+  \begin{itemize}
+    \item XOR the key again, but this time with a different padding called the \textit{outer pad} (opad).
+    \item Concatenate the result of the inner hash calculation with the outer padded key.
+    \item Hash the resulting data.
+  \end{itemize}
+  
+  \item \textbf{Output}: The final hash value after the second hash computation is the HMAC, which serves as the authentication code.
+\end{enumerate}
+
+\subsubsection{Security of HMAC}
+The security of HMAC depends on the strength of the underlying hash function and the secrecy of the key. HMAC is resistant to various attacks, such as:
+\begin{itemize}
+  \item Brute-force attacks.
+  \item Collision attacks.
+  \item Length-extension attacks (common in some hash functions).
+\end{itemize}
+
+Suppose a client wants to send a message to a server, and both share a secret key:
+\begin{enumerate}
+  \item The client computes the HMAC of the message using the shared key.
+  \item The client sends both the message and the HMAC to the server.
+  \item The server computes the HMAC of the received message with the same key.
+  \item If the computed HMAC matches the received HMAC, the server knows the message is authentic and unchanged.
+\end{enumerate}
 
 \subsection{Sponge Functions}
+Sponge functions are a modern technique to create hash functions, MACs, key derivation functions, and more. They are based on the sponge construction, which is a generalization of the Merkle-Damg\aa rd construction. \\
+
+It operates by absorbing input data and squeezing out output. The input and output can be of arbitrary length.
+A sponge function works on an internal state, which is divided into two parts:
+\begin{itemize}
+  \item Capacity (c): The part that controls security.
+  \item Rate (r): The part used for absorbing input and squeezing output.
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/sponge.png}
+    \caption{Sponge construction $\text{SP}[p]$}
+\end{figure}
+
+Operations:
+\begin{enumerate}
+    \item \textbf{Absorbing Phase}: The input is divided into blocks and absorbed into the internal state by XORing with the rate portion, followed by a transformation (permutation) of the state:
+    \[
+    S = P(S \oplus M_i)
+    \]
+    where \( S \) is the state, \( M_i \) is the input block, and \( P \) is the permutation function.
+    
+    \item  \textbf{Squeezing Phase}: After all input is absorbed, the output is extracted from the rate portion of the state. Additional squeezing rounds can be performed if more output is needed:
+    \[
+    O = S_{\text{rate}} \quad \text{(extract the rate portion)}
+    \]
+\end{enumerate}
+
+The security of a sponge function is based on the size of the capacity. Larger capacities make the function more resistant to collission and preimage attacks. \\
+
+\textbf{Example: SHA-3 (Keccak)}
+SHA-3, based on the Keccak sponge construction, has an internal state of 1600 bits, divided into 1024 bits for the rate and 576 bits for the capacity. The absorbing phase processes input in blocks of 1024 bits, and output is squeezed from the rate portion.
