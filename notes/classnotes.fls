@@ -489,6 +489,9 @@ INPUT ./img/sponge.png
 INPUT ./img/sponge.png
 INPUT ./img/sponge.png
 INPUT ./img/sponge.png
+INPUT ./lectures/lecture9.tex
+INPUT ./lectures/lecture9.tex
+INPUT ./lectures/lecture9.tex
 INPUT classnotes.aux
 INPUT ./classnotes.out
 INPUT ./classnotes.out
