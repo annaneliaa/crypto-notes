@@ -86,6 +86,13 @@ Decrypt a portion:
     948^{157} \pmod{2773}.
     \]
 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/Block-diagram-of-RSA-algorithm.png}
+    \caption{RSA Algorithm}
+\end{figure}
+
 \subsection{Security of RSA}
 Computing $d$ given $e$ and $N$ is equivalent to factoring $N$ into its prime factors $p$ and $q$. Thus it is no harder than factoring $N$. 
 Current suggestion: modulo need to be 2048 bits long. RSA is OW-CPA, but not IND-CPA secure, because:
@@ -235,9 +242,201 @@ So the message can be 1616, 4410, 1227, 15021.
 \Comment{add a comparison table of RSA and Rabin?}
 
 \subsection{Naive RSA Signature and Hashing}
+The Naive RSA Signature scheme is a basic implementation of digital signatures using the RSA cryptosystem.
+
+\begin{defn}
+A \textbf{digital signature} is a mathematical scheme for verifying the authenticity of digital messages or documents. A valid digital signature on a message gives a recipient confidence that the message came from a sender known to the recipient.
+A digital signature ensures authenticity, integrity, and non-repudiation of the message.
+The RSA signature scheme achieves this using the private and public keys of the RSA cryptosystem.
+\end{defn}
+
+The Naive RSA signature is called ``naive" because it lacks any padding or hashing. This makes it:
+\begin{itemize}
+    \item Inefficient for large messages: Large plaintexts $M$ directly require modular exponentiation.
+    \item Insecure against certain attacks: If $M$ is small, the signature can leak information about the private key $d$.
+Direct signatures on raw messages without hashing can lead to forgery attacks (e.g., the existential forgery attack).
+\end{itemize}
+
+Sender ``signs'' a message by decrypting it with their private key:
+\[ s \leftarrow m^d \pmod{N} \]
+
+The receiver ``verifies'' the signature by encrypting it with the sender's public key:
+\[ m \leftarrow s^e \pmod{N} \]
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{img/Private_key_signing.svg.png}
+    \caption{Digital Signature}
+\end{figure}
+
+We need to check the validity of the signature. Padding is required, because:
+\begin{itemize}
+    \item Without proper padding, certain attacks (such as \textbf{existential forgery}) can exploit weaknesses in the signature scheme to create forged signatures.
+    \item Padding ensures the message \( m \) is properly formatted, making it more secure and resistant to attacks.
+    \item The message \( m \) is padded to match the required input size for the cryptographic signature algorithm.
+\end{itemize}
+
+\subsubsection{Steps for Padding}
+
+Steps for padding: \( m \): The message, represented in \( t \) bits.
+\( N \): The modulus, represented in \( k \) bits, where \( t < k-32 \).
+
+\begin{enumerate}
+    \item Pad \( m \) with \textbf{zeros} on the left to make it a multiple of 8 bits.
+    \item Add \( \frac{k-t}{8} \) additional bytes on the left:
+    \begin{itemize}
+        \item Begin with `00`: A leading zero.
+        \item Add `01`: A start delimiter.
+        \item Insert a sequence of `FF` bytes.
+        \item Include `00`: A delimiter before the actual message.
+    \end{itemize}
+    \item The final padded message \( m \) is:
+    \[
+    m \leftarrow 00 \parallel 01 \parallel FF \parallel FF \ldots \parallel FF \parallel 00 \parallel m.
+    \]
+\end{enumerate}
+
+\subsubsection{Forgery Attacks}
+\textbf{Prevent Existential Forgery:}
+    \begin{itemize}
+        \item Existential forgery occurs when an attacker can create a valid-looking signature without the private key.
+        \item Proper padding prevents attackers from trivially guessing valid signatures.
+    \end{itemize}
+
+Padding also prevents againts \textbf{selective forgery} attacks, where an adversary aims to forge a signature for a specific message $m$ of their choice. 
+Suppose we have a signing oracle, which can compute signatures for any message, using the private key.
+The adversary wants to obtain a valid signature $s$ of target message $m$. 
+She can generate a random message $m_1 \in Z/NZ*$. 
+The attacker calculates:
+\[ m_2 = \frac{m}{m_1} \pmod{N} \]
+
+This ensures that $m_1 \cdot m_2 = m \pmod{N}$. She queries the signing oracle with $m_1, m_2$ and obtains the signatures $s_1, s_2$:
+
+\[ s_1 = m_1^d \pmod{N} \]
+\[ s_2 = m_2^d \pmod{N} \]
+
+Using the property of modular arithmetic,, the signatures can be combined:
+
+\[ s = s_1 \cdot s_2 \pmod{N} \]
+\[ s = (m_1^d \cdot m_2^d) \pmod{N} \]
+\[ = (m_1 \cdot m_2)^d \pmod{N} \]
+\[ = m^d \pmod{N} \]
+
+This gives the valid signature $s$ for the target message $m$.
+The attack relies on the multiplicative structure of RSA. By introducing proper padding, the relation 
+\[
+m = m_1 \cdot m_2 \mod N
+\]
+is broken, making it impossible to combine \( m_1 \) and \( m_2 \) into \( m \) whi
 
 \subsubsection{Signing Documents}
+Challenges of signing large documents include the need to divide the message $m$ 
+into smaller blocks if it is too large, adding serial numbers and redundant information to ensure integrity and uniqueness for each block, and the fact that signing and verifying each block individually can be computationally expensive.
+
+Solution: use a hash function. Instead of signing the entire message \(m\), the process is simplified by:
+    \begin{itemize}
+        \item Computing the hash of the message \(h(m)\), a fixed-size digest.
+        \item Signing the hash \(h(m)\) instead of the full message.
+        \item Separate message recovery and Verification
+    \end{itemize}
+
+\textbf{Sender's Side (A):}
+\begin{enumerate}
+    \item \textbf{Message Preparation:} The sender \(A\) computes the hash of the message: \(h(M)\).
+    \item \textbf{Generate the Signature:} The sender uses their private key \(D_{SA}\) to sign the hash \(h(M)\), creating the digital signature \(S_{SA}(M)\).
+    \item \textbf{Transmit the Signed Message:} The sender sends \(M\) (the original message) and \(S_{SA}(M)\) (the signature) to the receiver.
+\end{enumerate}
+
+\textbf{Receiver's Side (B):}
+\begin{enumerate}
+    \item \textbf{Hash Verification:} The receiver computes the hash of the received message \(M'\): \(h(M')\).
+    \item \textbf{Verify the Signature:}
+    \begin{itemize}
+        \item The receiver uses the sender's public key \(P_A\) to decrypt the signature \(S_{SA}(M)\), obtaining \(h(M)\).
+        \item Compare \(h(M')\) (newly computed) with \(h(M)\) (extracted from the signature).
+        \item If they match, the message \(M'\) is verified as authentic.
+    \end{itemize}
+    \item \textbf{Result:}
+    \begin{itemize}
+        \item If \(h(M') = h(M)\), verification succeeds.
+        \item Otherwise, verification fails.
+    \end{itemize}
+\end{enumerate}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/signing.png}
+    \caption{\textbf{Sender Side:}
+\(M\) is hashed (\(h(M)\)), and the private key generates the signature \(S_{SA}(M)\).
+Both \(M\) and \(S_{SA}(M)\) are sent to the receiver.
+\textbf{Receiver Side:}
+The receiver computes \(h(M')\) and verifies the signature using \(P_A\).
+If \(h(M') = h(M)\), the message \(M'\) is validated.}
+\end{figure}
 
 \subsubsection{Requirements for the Hash Function}
+\begin{itemize}
+    \item \textbf{Preimage resistance:} Adversary should not be able to cook her own signature for a message of her choice
+    \item \textbf{Second preimage resistance:} Attacker can find another message for a valid signature
+    \item \textbf{Collision resistance:} The signer generates two messages with $H(m) = H(m')$ and releases $(m,s)$. Later, she claims $(m',s)$ (repudiation)
+\end{itemize}
+\Comment{more explanation here}
 
-\subsubsection{More on the security of RSA}
+\subsection{More on the security of RSA}
+\begin{itemize}
+    \item Knowledge of $d$ and factoring: if you know $d$, you can factor $N$ using the Las Vegas algorithm
+    \item Knowledge of $\phi(N)$ and factoring: if you know $\phi(N)$, you can factor $N$
+    \item Shared modulus $N$ is \emph{not} a good idea!
+    \item Use a small public exponent $e$: using CRT, RSA can be broken. Thus padding is important
+    \item More attacks exist (see slides)
+\end{itemize}
+
+\subsubsection{Knowledge of \texorpdfstring{$\phi(N)$}{phi(N)} and factoring}
+\[ \phi(N) = (p-1)(q-1) = N - (p+1) + 1\]
+\[ S = N + 1 - \phi \]
+\[ S = p + q \]
+
+\[f(X) = (X - p)\cdot (X - q) = X^2 - S \cdot X + N\]
+Then:
+
+\[ p = \frac{S + \sqrt{S^2 - 4\cdot N}}{2} \]
+\[ q = \frac{S - \sqrt{S^2 - 4\cdot N}}{2} \]
+
+\subsubsection{Use of a Shared Modulus}
+There are two people sharing the same modulus. Two cases:
+\begin{enumerate}
+    \item Attacker shares the modulus with another person. From $d_1$, the attacker can compute $p$ and $q$. Then the attacker computes $d_2$ from $e_2$ (public key), $p$ and $q$.
+    \item Attacker is not one of the two people
+    \[ c_1 = m^{e_1} \pmod{N} , \quad t_1 \leftarrow e_1^{-1} \pmod{e_2}\]
+    \[ c_2 = m^{e_2} \pmod{N} , \quad t_2 \leftarrow (t_1 \cdot e_1^{-1} -1) / e_2\]
+    
+    Then:
+    \[ c_1^{t_1} \cdot c_2^{t_2} = m^{e_1 \cdot t_1}mm^{-e_2 \cdot t_2} \]
+    \[ = m^{1 + e_2 \cdot t_2}mm^{-e_2 \cdot t_2} \]
+    \[ = m^{e_1 \cdot t_1 -e_2 \cdot t_2} \]
+    \[ = m^1 = m\]
+\end{enumerate}
+
+\subsubsection{Use of a Small Public Exponent}
+For fast computation, choosing a small public exponent is common.
+However, this can lead to attack, particularly when the same message $m$ 
+is encrypted under different public keys $N_1, N_2, N_3$.
+This is because the ciphertexts $(c_1, c_2, c_3)$ do not involve any randomness in the encryption process (as is the case in textbook RSA). \\
+
+For example, if $e = 3$, then:
+
+\[ c_1 = m^3 \pmod{N_1} \]
+\[ c_2 = m^3 \pmod{N_2} \]
+\[ c_3 = m^3 \pmod{N_3} \]
+
+Since the moduli are distinct (and therefore coprime), the CRT can be used to comhine the ciphertexts 
+and reconstruct the original message $m^3$ modulo $N_1 \cdot N_2 \cdot N_3$. 
+Because $m^3 < N_1 \cdot N_2 \cdot N_3$, the modular reductiion has no effect (no modulus wrapping).
+So then, $X= m^3$ and $X^{1/3} = m$.
+Thus, taking the cube root of this value yields the original message $m$.
+
+\[ X = c_i \pmod{N_i} \  \text{for} \ i = 1,2,3 \]
+\[ X = m^3 \pmod{N_1 \cdot N_2 \cdot N_3} \]
+
+An attacker can now decrypt the message $m$ without knowing the private keys.
