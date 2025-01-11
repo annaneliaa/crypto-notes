@@ -432,7 +432,7 @@ For example, if $e = 3$, then:
 
 Since the moduli are distinct (and therefore coprime), the CRT can be used to comhine the ciphertexts 
 and reconstruct the original message $m^3$ modulo $N_1 \cdot N_2 \cdot N_3$. 
-Because $m^3 < N_1 \cdot N_2 \cdot N_3$, the modular reductiion has no effect (no modulus wrapping).
+Because $m^3 < N_1 \cdot N_2 \cdot N_3$, the modular reduction has no effect (no modulus wrapping).
 So then, $X= m^3$ and $X^{1/3} = m$.
 Thus, taking the cube root of this value yields the original message $m$.
 
@@ -440,3 +440,16 @@ Thus, taking the cube root of this value yields the original message $m$.
 \[ X = m^3 \pmod{N_1 \cdot N_2 \cdot N_3} \]
 
 An attacker can now decrypt the message $m$ without knowing the private keys.
+
+\subsubsection{Why can't we compute the private key from the public key?}
+Say we have the public key $(e,N)$, why can I not just get the private key $d$ by computing $d$ as the modular inverse of $e$ and $\phi(N)$? \\
+
+To find the modular inverse of $e$ modulo $\phi(N)$, we need the prime factorization of $N$. 
+For relatively small $N$, this is easy, or we can code it (e.g., in Haskell using number theory).
+But RSA uses 2048-bit $N$, finding these factors is computationally challenging.
+The performance of the code will degrade exponentially as $N$ grows. \\
+
+Factoring $N$ into $p$ and $q$ is the central hard problem that RSA depends on. Efficient algorithms for factoring $N$ would break RSA encryption (quantum computers).
+Without knowing $p$ and $q$, you cannot calculate $\phi(N)$. 
+These are kept private and are \textbf{never included in the public key}. 
+During RSA key generation, $p$ and $q$ are randomly chosen large prime numbers and discarded after $d$ is computed (in many implementations), reducing the risk of leakage.

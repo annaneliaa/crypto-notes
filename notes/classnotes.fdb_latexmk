@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1736350090.88179 "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" "classnotes.pdf" "classnotes" 1736350094.17298 0
+["pdflatex"] 1736596071.48994 "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" "classnotes.pdf" "classnotes" 1736596074.73258 0
   "/Users/annavisman/stack/TUDelft/SC/notes/classnotes.tex" 1736274545.37146 1501 72c428e3f79232fab15b62c79602f79c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -141,10 +141,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1731759341.66087 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731759331 8221437 9c99fe9db5777ba97135d51eeed75aed ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "classnotes.aux" 1736350094.05309 28413 84adec73ff413f538573c6b49975417e "pdflatex"
-  "classnotes.out" 1736350094.05585 25026 f2fc8bc8a68567f030d53bd54b7ac3cc "pdflatex"
+  "classnotes.aux" 1736596074.61624 28588 d14a573f8e04cc678511a4b66386179c "pdflatex"
+  "classnotes.out" 1736596074.61896 25410 a04736709072637681ca07e9597fc744 "pdflatex"
   "classnotes.tex" 1736274545.37146 1501 72c428e3f79232fab15b62c79602f79c ""
-  "classnotes.toc" 1736350094.05611 13747 b77ef7a372429408131b2c0953d7605e "pdflatex"
+  "classnotes.toc" 1736596074.61929 13881 52242ab994bb7ea3bc47d49bc01d691a "pdflatex"
   "img/2ndpreimage.png" 1735834728.52423 16631 1c00632429d67fdb327f5bdfbb786f72 ""
   "img/3DES.png" 1734381632.90463 66426 b89e3b94a0a5d3d8902ba143f339760f ""
   "img/AES.png" 1734556621.38541 216133 65e14a5d2cc51e414db832e82478aec5 ""
@@ -203,7 +203,7 @@
   "lectures/lecture6.tex" 1734267642.20948 16154 068d5763f000726aa4240cebd186eaa2 ""
   "lectures/lecture7.tex" 1735852796.10926 38924 b4b3d5a07e425867f145a2572b0ded12 ""
   "lectures/lecture8.tex" 1735913777.05401 20579 29ab3689421cbb6a63bb59fecbd93732 ""
-  "lectures/lecture9.tex" 1736350090.64777 20604 686201b553e9647af36d50f1c121d6cc ""
+  "lectures/lecture9.tex" 1736596071.24913 21646 6d474656bb1a4cd8e86521e23acbb595 ""
   (generated)
   "classnotes.aux"
   "classnotes.log"
