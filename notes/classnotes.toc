@@ -1,150 +1,162 @@
-\contentsline {section}{\numberline {1}Lecture 1}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Security Overview}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Defense Overview}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Cryptography Overview}{5}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Topics Covered in Course}{6}{subsection.1.4}%
-\contentsline {section}{\numberline {2}Lecture 2}{7}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Number Theory}{7}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Modular Arithmetic}{7}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Modular Exponentiation}{7}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Groups and Rings}{8}{subsubsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.4}Primes and Divisibility}{9}{subsubsection.2.1.4}%
-\contentsline {subsubsection}{\numberline {2.1.5}Linear Congruences}{9}{subsubsection.2.1.5}%
-\contentsline {subsubsection}{\numberline {2.1.6}Fields}{10}{subsubsection.2.1.6}%
-\contentsline {subsubsection}{\numberline {2.1.7}Lagrange's Theorem}{10}{subsubsection.2.1.7}%
-\contentsline {subsubsection}{\numberline {2.1.8}Fermat's Little Theorem}{11}{subsubsection.2.1.8}%
-\contentsline {subsection}{\numberline {2.2}Basic Algorithms}{11}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Euclid's GCD Algorithm}{11}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}The Extended Euclidean Algorithm}{11}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}The Chinese Remainder Theorem}{12}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Computing Legendre and Jacobi Symbols}{13}{subsubsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.3}Primality Tests}{14}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Fermat's Primality Test}{15}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Miller-Rabin Primality Test}{15}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Elliptic Curves}{15}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Lecture 3}{18}{section.3}%
-\contentsline {subsection}{\numberline {3.1}The Syntax of Encryption}{18}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Classical Ciphers}{18}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Caesar Cipher}{18}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Shift Cipher}{18}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Statistical Distance}{18}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.4}Substitution Cipher}{19}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Vigenère Cipher}{19}{subsubsection.3.2.5}%
-\contentsline {subsubsection}{\numberline {3.2.6}Permutation Cipher}{20}{subsubsection.3.2.6}%
-\contentsline {section}{\numberline {4}Lecture 4}{21}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Information Theory}{21}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Security Definitions}{21}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Probability and Ciphers}{21}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Perfect Secrecy}{21}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}One-Time Pad}{22}{subsubsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.5}Entropy}{22}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Joint Entropy, Conditional Entropy and Mutual Information}{23}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Application to Ciphers}{23}{subsubsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.7}Spurious Keys and Unicity Distance}{24}{subsection.4.7}%
-\contentsline {subsubsection}{\numberline {4.7.1}Entropy of a Natural Language}{24}{subsubsection.4.7.1}%
-\contentsline {subsubsection}{\numberline {4.7.2}Redundancy}{24}{subsubsection.4.7.2}%
-\contentsline {subsubsection}{\numberline {4.7.3}Unicity Distance and Ciphers}{25}{subsubsection.4.7.3}%
-\contentsline {section}{\numberline {5}Lecture 5}{26}{section.5}%
-\contentsline {subsubsection}{\numberline {5.0.1}What does it mean to be secure?}{26}{subsubsection.5.0.1}%
-\contentsline {subsection}{\numberline {5.1}Security Games}{26}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}The FACTOR Problem}{26}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Measuring the Adversary's Advantage}{26}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Pseudo-Random Functions}{27}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Adversary's Advantage}{28}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Why is this important?}{28}{subsubsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.3}Trapdoor Functions}{29}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Public Key Cryptography}{29}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Basic Notions of Security}{29}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.1}OW-PASS attack}{29}{subsubsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.5.2}OW-CPA attack}{30}{subsubsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.3}OW-CCA attack}{30}{subsubsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.6}Modern Notions of Security}{31}{subsection.5.6}%
-\contentsline {subsubsection}{\numberline {5.6.1}IND Security Games}{32}{subsubsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.7}Other Notions of Security}{32}{subsection.5.7}%
-\contentsline {subsubsection}{\numberline {5.7.1}Malleability}{33}{subsubsection.5.7.1}%
-\contentsline {subsection}{\numberline {5.8}Random Oracle Model}{33}{subsection.5.8}%
-\contentsline {section}{\numberline {6}Lecture 6}{34}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Stream Ciphers}{34}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Linear Feedback Shift Registers (LFSRs)}{34}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Properties of LFSRs}{35}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Feedback Functions}{35}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.3}Zero State in Feedback Functions:}{36}{subsubsection.6.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.4}Mathematical Expression}{36}{subsubsection.6.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.5}Primitive Polynomial}{37}{subsubsection.6.2.5}%
-\contentsline {subsection}{\numberline {6.3}Period}{38}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Security of LFSRs}{39}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Combining LFSRs}{39}{subsection.6.5}%
-\contentsline {subsubsection}{\numberline {6.5.1}Non-linear Combiners}{39}{subsubsection.6.5.1}%
-\contentsline {section}{\numberline {7}Lecture 7}{40}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Block Ciphers}{40}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Properties of Block Ciphers}{40}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Design}{41}{subsubsection.7.1.2}%
-\contentsline {subsubsection}{\numberline {7.1.3}The Avalanche Effect}{41}{subsubsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.2}Feistel Ciphers}{41}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Encryption}{42}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Decryption}{42}{subsubsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.3}Data Encryption Standard (DES)}{43}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Function $F$}{44}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}S-boxes}{44}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Permutations and P-box}{44}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.4}Key Scheduling}{45}{subsubsection.7.3.4}%
-\contentsline {subsubsection}{\numberline {7.3.5}Security of DES}{46}{subsubsection.7.3.5}%
-\contentsline {subsubsection}{\numberline {7.3.6}Cryptanalysis of Block Ciphers}{46}{subsubsection.7.3.6}%
-\contentsline {subsection}{\numberline {7.4}Advanced Encryption Standard (AES)}{46}{subsection.7.4}%
-\contentsline {subsubsection}{\numberline {7.4.1}Finite Fields and Arithmatic in AES}{47}{subsubsection.7.4.1}%
-\contentsline {subsubsection}{\numberline {7.4.2}State Matrix}{48}{subsubsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.3}AES Operations}{48}{subsubsection.7.4.3}%
-\contentsline {subsubsection}{\numberline {7.4.4}Key Scheduling}{49}{subsubsection.7.4.4}%
-\contentsline {subsubsection}{\numberline {7.4.5}Encryption and Decryption}{50}{subsubsection.7.4.5}%
-\contentsline {subsection}{\numberline {7.5}DES vs. AES}{50}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Modes of Operation}{51}{subsection.7.6}%
-\contentsline {subsubsection}{\numberline {7.6.1}Electronic Codebook (ECB)}{51}{subsubsection.7.6.1}%
-\contentsline {subsubsection}{\numberline {7.6.2}Cipher Block Chaining (CBC)}{51}{subsubsection.7.6.2}%
-\contentsline {subsubsection}{\numberline {7.6.3}Output Feedback (OFB)}{52}{subsubsection.7.6.3}%
-\contentsline {subsubsection}{\numberline {7.6.4}Cipher Feedback (CFB)}{53}{subsubsection.7.6.4}%
-\contentsline {subsubsection}{\numberline {7.6.5}Counter Mode (CTR)}{53}{subsubsection.7.6.5}%
-\contentsline {subsubsection}{\numberline {7.6.6}Security: how to achieve CCA?}{54}{subsubsection.7.6.6}%
-\contentsline {section}{\numberline {8}Lecture 8}{55}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Hash Functions}{55}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1}Preimage Resistance}{55}{subsubsection.8.1.1}%
-\contentsline {subsubsection}{\numberline {8.1.2}Collision Resistance}{55}{subsubsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.2}Padding}{56}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Padding Methods}{56}{subsubsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.3}Merkle-Damg\r ard Construction}{57}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}MD Algorithm}{57}{subsubsection.8.3.1}%
-\contentsline {subsubsection}{\numberline {8.3.2}Benefits of MD Construction}{57}{subsubsection.8.3.2}%
-\contentsline {subsubsection}{\numberline {8.3.3}Properties of MD Construction}{57}{subsubsection.8.3.3}%
-\contentsline {subsubsection}{\numberline {8.3.4}Security properties under different scenarios}{58}{subsubsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.4}MD-4}{58}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Birthday Paradox}{59}{subsection.8.5}%
-\contentsline {subsubsection}{\numberline {8.5.1}Why does this happen?}{59}{subsubsection.8.5.1}%
-\contentsline {subsubsection}{\numberline {8.5.2}In Cryptography}{59}{subsubsection.8.5.2}%
-\contentsline {subsubsection}{\numberline {8.5.3}Random vs. Meaningful Birthdaying}{59}{subsubsection.8.5.3}%
-\contentsline {subsubsection}{\numberline {8.5.4}Implementing Birthdaying}{59}{subsubsection.8.5.4}%
-\contentsline {subsection}{\numberline {8.6}MAC and HMAC}{60}{subsection.8.6}%
-\contentsline {subsubsection}{\numberline {8.6.1}Insecurity of Naïve Keyed Hash Construction}{60}{subsubsection.8.6.1}%
-\contentsline {subsubsection}{\numberline {8.6.2}Secure Keyed Hash Construction}{60}{subsubsection.8.6.2}%
-\contentsline {subsubsection}{\numberline {8.6.3}Security of HMAC}{61}{subsubsection.8.6.3}%
-\contentsline {subsection}{\numberline {8.7}Sponge Functions}{61}{subsection.8.7}%
-\contentsline {section}{\numberline {9}Lecture 9}{63}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Naive RSA Algorithm}{63}{subsection.9.1}%
-\contentsline {subsubsection}{\numberline {9.1.1}Encryption and Decryption}{63}{subsubsection.9.1.1}%
-\contentsline {subsubsection}{\numberline {9.1.2}Example of RSA}{64}{subsubsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.2}Security of RSA}{64}{subsection.9.2}%
-\contentsline {subsubsection}{\numberline {9.2.1}How to make RSA IND-CPA secure?}{65}{subsubsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.3}Rabin Encryption}{65}{subsection.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.1}Key Generation}{65}{subsubsection.9.3.1}%
-\contentsline {subsubsection}{\numberline {9.3.2}Encryption and Decryption}{66}{subsubsection.9.3.2}%
-\contentsline {subsubsection}{\numberline {9.3.3}Trapdoor}{66}{subsubsection.9.3.3}%
-\contentsline {subsubsection}{\numberline {9.3.4}Example}{67}{subsubsection.9.3.4}%
-\contentsline {subsubsection}{\numberline {9.3.5}Security of Rabin}{67}{subsubsection.9.3.5}%
-\contentsline {subsection}{\numberline {9.4}Naive RSA Signature and Hashing}{67}{subsection.9.4}%
-\contentsline {subsubsection}{\numberline {9.4.1}Steps for Padding}{68}{subsubsection.9.4.1}%
-\contentsline {subsubsection}{\numberline {9.4.2}Forgery Attacks}{68}{subsubsection.9.4.2}%
-\contentsline {subsubsection}{\numberline {9.4.3}Signing Documents}{69}{subsubsection.9.4.3}%
-\contentsline {subsubsection}{\numberline {9.4.4}Requirements for the Hash Function}{70}{subsubsection.9.4.4}%
-\contentsline {subsection}{\numberline {9.5}More on the security of RSA}{70}{subsection.9.5}%
-\contentsline {subsubsection}{\numberline {9.5.1}Knowledge of $\phi (N)$ and factoring}{70}{subsubsection.9.5.1}%
-\contentsline {subsubsection}{\numberline {9.5.2}Use of a Shared Modulus}{70}{subsubsection.9.5.2}%
-\contentsline {subsubsection}{\numberline {9.5.3}Use of a Small Public Exponent}{71}{subsubsection.9.5.3}%
-\contentsline {subsubsection}{\numberline {9.5.4}Why can't we compute the private key from the public key?}{71}{subsubsection.9.5.4}%
+\contentsline {section}{\numberline {1}Lecture 1}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Security Overview}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Defense Overview}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Cryptography Overview}{6}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Topics Covered in Course}{7}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Lecture 2}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Number Theory}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Modular Arithmetic}{8}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Modular Exponentiation}{8}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Groups and Rings}{9}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Primes and Divisibility}{10}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Linear Congruences}{10}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Fields}{11}{subsubsection.2.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.7}Lagrange's Theorem}{11}{subsubsection.2.1.7}%
+\contentsline {subsubsection}{\numberline {2.1.8}Fermat's Little Theorem}{12}{subsubsection.2.1.8}%
+\contentsline {subsection}{\numberline {2.2}Basic Algorithms}{12}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Euclid's GCD Algorithm}{12}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}The Extended Euclidean Algorithm}{12}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}The Chinese Remainder Theorem}{13}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Computing Legendre and Jacobi Symbols}{14}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}Primality Tests}{15}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Fermat's Primality Test}{16}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Miller-Rabin Primality Test}{16}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Elliptic Curves}{16}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Lecture 3}{19}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The Syntax of Encryption}{19}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Classical Ciphers}{19}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Caesar Cipher}{19}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Shift Cipher}{19}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Statistical Distance}{19}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Substitution Cipher}{20}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Vigenère Cipher}{20}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.6}Permutation Cipher}{21}{subsubsection.3.2.6}%
+\contentsline {section}{\numberline {4}Lecture 4}{22}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Information Theory}{22}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Security Definitions}{22}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Probability and Ciphers}{22}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Perfect Secrecy}{22}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}One-Time Pad}{23}{subsubsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.5}Entropy}{23}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Joint Entropy, Conditional Entropy and Mutual Information}{24}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Application to Ciphers}{24}{subsubsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.7}Spurious Keys and Unicity Distance}{25}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Entropy of a Natural Language}{25}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Redundancy}{25}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.3}Unicity Distance and Ciphers}{26}{subsubsection.4.7.3}%
+\contentsline {section}{\numberline {5}Lecture 5}{27}{section.5}%
+\contentsline {subsubsection}{\numberline {5.0.1}What does it mean to be secure?}{27}{subsubsection.5.0.1}%
+\contentsline {subsection}{\numberline {5.1}Security Games}{27}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}The FACTOR Problem}{27}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Measuring the Adversary's Advantage}{27}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Pseudo-Random Functions}{28}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Adversary's Advantage}{29}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Why is this important?}{29}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}Trapdoor Functions}{30}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Public Key Cryptography}{30}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Basic Notions of Security}{30}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}OW-PASS attack}{30}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}OW-CPA attack}{31}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}OW-CCA attack}{31}{subsubsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.6}Modern Notions of Security}{32}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.6.1}IND Security Games}{33}{subsubsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.7}Other Notions of Security}{33}{subsection.5.7}%
+\contentsline {subsubsection}{\numberline {5.7.1}Malleability}{34}{subsubsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.8}Random Oracle Model}{34}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Lecture 6}{35}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Stream Ciphers}{35}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Linear Feedback Shift Registers (LFSRs)}{35}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Properties of LFSRs}{36}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Feedback Functions}{36}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Zero State in Feedback Functions:}{37}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Mathematical Expression}{37}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Primitive Polynomial}{38}{subsubsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.3}Period}{39}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Security of LFSRs}{40}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Combining LFSRs}{40}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Non-linear Combiners}{40}{subsubsection.6.5.1}%
+\contentsline {section}{\numberline {7}Lecture 7}{41}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Block Ciphers}{41}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Properties of Block Ciphers}{41}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Design}{42}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}The Avalanche Effect}{42}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.2}Feistel Ciphers}{42}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Encryption}{43}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Decryption}{43}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Data Encryption Standard (DES)}{44}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Function $F$}{45}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}S-boxes}{45}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3}Permutations and P-box}{45}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.4}Key Scheduling}{46}{subsubsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.5}Security of DES}{47}{subsubsection.7.3.5}%
+\contentsline {subsubsection}{\numberline {7.3.6}Cryptanalysis of Block Ciphers}{47}{subsubsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.4}Advanced Encryption Standard (AES)}{47}{subsection.7.4}%
+\contentsline {subsubsection}{\numberline {7.4.1}Finite Fields and Arithmatic in AES}{48}{subsubsection.7.4.1}%
+\contentsline {subsubsection}{\numberline {7.4.2}State Matrix}{49}{subsubsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.3}AES Operations}{49}{subsubsection.7.4.3}%
+\contentsline {subsubsection}{\numberline {7.4.4}Key Scheduling}{50}{subsubsection.7.4.4}%
+\contentsline {subsubsection}{\numberline {7.4.5}Encryption and Decryption}{51}{subsubsection.7.4.5}%
+\contentsline {subsection}{\numberline {7.5}DES vs. AES}{51}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Modes of Operation}{52}{subsection.7.6}%
+\contentsline {subsubsection}{\numberline {7.6.1}Electronic Codebook (ECB)}{52}{subsubsection.7.6.1}%
+\contentsline {subsubsection}{\numberline {7.6.2}Cipher Block Chaining (CBC)}{52}{subsubsection.7.6.2}%
+\contentsline {subsubsection}{\numberline {7.6.3}Output Feedback (OFB)}{53}{subsubsection.7.6.3}%
+\contentsline {subsubsection}{\numberline {7.6.4}Cipher Feedback (CFB)}{54}{subsubsection.7.6.4}%
+\contentsline {subsubsection}{\numberline {7.6.5}Counter Mode (CTR)}{54}{subsubsection.7.6.5}%
+\contentsline {subsubsection}{\numberline {7.6.6}Security: how to achieve CCA?}{55}{subsubsection.7.6.6}%
+\contentsline {section}{\numberline {8}Lecture 8}{56}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Hash Functions}{56}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Preimage Resistance}{56}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Collision Resistance}{56}{subsubsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.2}Padding}{57}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Padding Methods}{57}{subsubsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.3}Merkle-Damg\r ard Construction}{58}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}MD Algorithm}{58}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Benefits of MD Construction}{58}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Properties of MD Construction}{58}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}Security properties under different scenarios}{59}{subsubsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.4}MD-4}{59}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Birthday Paradox}{60}{subsection.8.5}%
+\contentsline {subsubsection}{\numberline {8.5.1}Why does this happen?}{60}{subsubsection.8.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.2}In Cryptography}{60}{subsubsection.8.5.2}%
+\contentsline {subsubsection}{\numberline {8.5.3}Random vs. Meaningful Birthdaying}{60}{subsubsection.8.5.3}%
+\contentsline {subsubsection}{\numberline {8.5.4}Implementing Birthdaying}{60}{subsubsection.8.5.4}%
+\contentsline {subsection}{\numberline {8.6}MAC and HMAC}{61}{subsection.8.6}%
+\contentsline {subsubsection}{\numberline {8.6.1}Insecurity of Naïve Keyed Hash Construction}{61}{subsubsection.8.6.1}%
+\contentsline {subsubsection}{\numberline {8.6.2}Secure Keyed Hash Construction}{61}{subsubsection.8.6.2}%
+\contentsline {subsubsection}{\numberline {8.6.3}Security of HMAC}{62}{subsubsection.8.6.3}%
+\contentsline {subsection}{\numberline {8.7}Sponge Functions}{62}{subsection.8.7}%
+\contentsline {section}{\numberline {9}Lecture 9}{64}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Naive RSA Algorithm}{64}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Encryption and Decryption}{64}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Example of RSA}{65}{subsubsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.2}Security of RSA}{65}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}How to make RSA IND-CPA secure?}{66}{subsubsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.3}Rabin Encryption}{66}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Key Generation}{66}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}Encryption and Decryption}{67}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}Trapdoor}{67}{subsubsection.9.3.3}%
+\contentsline {subsubsection}{\numberline {9.3.4}Example}{68}{subsubsection.9.3.4}%
+\contentsline {subsubsection}{\numberline {9.3.5}Security of Rabin}{68}{subsubsection.9.3.5}%
+\contentsline {subsection}{\numberline {9.4}Naive RSA Signature and Hashing}{68}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Steps for Padding}{69}{subsubsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.2}Forgery Attacks}{69}{subsubsection.9.4.2}%
+\contentsline {subsubsection}{\numberline {9.4.3}Signing Documents}{70}{subsubsection.9.4.3}%
+\contentsline {subsubsection}{\numberline {9.4.4}Requirements for the Hash Function}{71}{subsubsection.9.4.4}%
+\contentsline {subsection}{\numberline {9.5}More on the security of RSA}{71}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {9.5.1}Knowledge of $\phi (N)$ and factoring}{71}{subsubsection.9.5.1}%
+\contentsline {subsubsection}{\numberline {9.5.2}Use of a Shared Modulus}{71}{subsubsection.9.5.2}%
+\contentsline {subsubsection}{\numberline {9.5.3}Use of a Small Public Exponent}{72}{subsubsection.9.5.3}%
+\contentsline {subsubsection}{\numberline {9.5.4}Why can't we compute the private key from the public key?}{72}{subsubsection.9.5.4}%
+\contentsline {section}{\numberline {10}Lecture 10}{73}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Public Key Encryption Schemes}{73}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Goldwasser-Micali}{73}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}ElGamal}{75}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}Paillier}{75}{subsubsection.10.1.3}%
+\contentsline {subsubsection}{\numberline {10.1.4}Additive Homomorphism}{77}{subsubsection.10.1.4}%
+\contentsline {subsubsection}{\numberline {10.1.5}RSA-OAEP}{77}{subsubsection.10.1.5}%
+\contentsline {subsubsection}{\numberline {10.1.6}Fujisaki-Okamoto Transform}{78}{subsubsection.10.1.6}%
+\contentsline {subsection}{\numberline {10.2}Hybrid Ciphers}{78}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}RSA-KEM}{79}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}DHIES-KEM}{79}{subsubsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.3}Secure Digital Signatures}{80}{subsection.10.3}%
