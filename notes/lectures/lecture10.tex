@@ -357,7 +357,7 @@ Given that KEM and DEM are \textbf{secure separate}, the hybrid system is secure
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.4\textwidth]{img/securecom.png}
+    \includegraphics[width=0.5\textwidth]{img/securecom.png}
     \caption{Secure Communication}
 \end{figure}
 
@@ -413,3 +413,203 @@ For \textbf{decapsulation}, the recipient does the following:
 This scheme is IND-CCA secure under ROM.
 
 \subsection{Secure Digital Signatures} 
+
+\subsubsection{RSA-FDH}
+\textbf{RSA-FDH (Full Domain Hash)} is a cryptographic signature scheme that combines the RSA algorithm with the concept of hashing 
+to ensure the security and integrity of digital signatures.
+RSA and hash functions (such as SHA-256) can be combined for an efficient and secure signature scheme.
+
+\begin{enumerate}
+    \item Take a message $m$ and compute the hash $h = H(m)$
+    \item Sign the hash $h$ using the RSA private key $d$ to get the signature $s = h^d \mod N$
+    \item Compute $h' = H(m)$ upon receiving the message $m$
+    \item Verify the signature using the pulic key and obtain $h$ using $s^e \mod N$
+    \item Compare if the two hashes $h = h'$ match
+\end{enumerate}
+
+This scheme is secure, however, the codomain of the hash function should match the domain of RSA. This is not possible in practice, so we use the RSA-PSS scheme.
+
+\subsubsection{RSA-PSS}
+\textbf{RSA-PSS (Probabilistic Signature Scheme)} is a secure digital signature scheme that combines the RSA algorithm with the Probabilistic Signature Scheme (PSS) padding scheme. \\
+
+N is an RSA modulo is size $k$ bits, with $e$ and $d$ as the public and private exponents.
+Define two parameters $k_0$ and $k_1$ such that $k_0 + k_1< k -1 $.
+Define the following hash functions:
+
+\[ G: \{0,1\}^{k_2}  \rightarrow \{0,1\}^{k - k_1 -1} \]
+\[ H: \{0,1\}^* \rightarrow \{0,1\}^{k_1} \]
+
+and
+
+\[ G_1: \{0,1\}^{k_1}  \rightarrow \{0,1\}^{k_0} \]
+\[ G_2: \{0,1\}^{k_1}  \rightarrow \{0,1\}^{k - k_0 - k_1 -1} \]
+\[ G(w) = G_1(w) || G_2(w)\]
+
+\textbf{Signing:} To sign a message $m$, the private key holder performs:
+\begin{itemize}
+    \item $r \leftarrow \{0,1\}^{k_0}$
+    \item $w \leftarrow H(m||r)$
+    \item $y \leftarrow 0||w||(G_1(w)\oplus r)||G_2(w)$
+    \item $s \leftarrow y^d \pmod{N}$
+\end{itemize}
+
+\textbf{Verification:} To verify a signature $s$ on a message $m$ ($(s,m)$), the public key holder performs:
+\begin{itemize}
+    \item $y \leftarrow s^e \pmod{N}$
+    \item Split $y$ into the components 
+    \[ b||w||\alpha||\gamma\]
+    where $b$ is one bit long, $w$ is $k_1$ bits long, $\alpha$ is $k_0$ bits long, and $\gamma$ is $k - k_0 - k_1 -1$ bits long.
+
+    \item Compute $r = \alpha \oplus G_1(w)$
+    \item The signature is verified as correct if and only if $b = 0$, $G_2(w) = \gamma$, and $H(m||r) = w$.
+\end{itemize}
+
+\subsubsection{The Digital Signature Algorithm (DSA)}
+Reasons to have a DSA:
+\begin{itemize}
+    \item RSA based schemes are costly in terms of signature generation
+    \item RSA based signatures are large
+    \item RSA might be broken soon
+\end{itemize}
+
+DSA is based on finite fielsds or elliptic curves (EC-DSA).
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/digsign.png}
+        \caption{Model of Digital Signature Process}
+    \end{subfigure}
+    \hspace{0.1\textwidth}
+    \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/dsa.png}
+        \caption{DSA Approach. PU$_G$ = global public key}
+    \end{subfigure}
+    \caption{Digital Signature Models}
+    \label{fig:digsign-dsa}
+\end{figure}
+
+\textbf{Parameters:}
+\begin{itemize}
+    \item A large prime $p$ such that $p-1$ is divisible by a another (large) prime $q$
+    \item A generator $g$ of the field in $\mod p$, with an order $q$ in $\mathbb{Z}_p^*$
+    \item A hash function $H$ that maps bit strings to $Z/pZ$
+    \item DSA works in the cyclic subgroup of size $q$, where $q > 256$ bits (for 128 bit security) and $p > 2048$ bits
+\end{itemize}
+
+\textbf{Key Generation:}
+\begin{itemize}
+    \item Generate a private key $x \in \{1, \cdots, q-1\}$
+    \item Compute the public key $h = g^x \mod p$, where $h$ is the public key
+\end{itemize}
+
+\textbf{Signing:} Sign with private key. Compute the signature $(s, r)$ on a message $m$ in $Z/qZ$:
+\begin{itemize}
+    \item $h \leftarrow H(m)$:
+    \begin{itemize}
+        \item Compute the cryptographic hash $h$ of the message $m$ using the hash function $H$.
+    \end{itemize}
+    \item $k \leftarrow (Z/qZ)^*$:
+    \begin{itemize}
+        \item Select a random integer $k$ from the set $(Z/qZ)^*$, which includes all integers modulo $q$ excluding zero.
+        \item The value of $k$ must be kept secret and should not be reused for multiple signatures, as reusing $k$ can lead to the recovery of the private key $x$.
+        \item $k$ is used to produce the signature components $r$ and $s$. 
+    \end{itemize}
+    \item $r \leftarrow (g^k \pmod{p}) \pmod{q}$:
+    \begin{itemize}
+        \item Compute the value of $r$ by raising the generator $g$ to the power of $k$, taking the result modulo $p$, and then reducing modulo $q$.
+        \item The value $r$ depends on the random value $k$ and the group parameters $p$, $q$, and $g$.
+        \item This step ensures that $r$ is deterministic for a given $k$, while remaining unpredictable due to the randomness of $k$.
+    \end{itemize}
+    \item $s \leftarrow (h + x \cdot r) \backslash k \pmod{q}$:
+    \begin{itemize}
+        \item Compute $s$ by first calculating $(h + x \cdot r) \mod q$, where $x$ is the private key and $h$ is the hash of the message.
+        \item The value $s$ incorporates the message hash $h$, the private key $x$, and the randomness of $k$, binding the signature to both the message and the signer.
+    \end{itemize}
+\end{itemize}
+
+\textbf{Verification:} Verify with public key (derived from private key and shared publicly).
+To verify a signature $(s,r)$ on a message $m$, using the public key $h$:
+\begin{itemize}
+    \item To verify the signature \((r, s)\), the verifier uses the global parameters (\(p\), \(q\), \(g\)), the sender's public key \(y\), and the message hash \(h = H(m)\).
+    \item $h \leftarrow H(m)$: The receiver computes the hash of the received message $m$
+    \item $a \leftarrow h / s \pmod{q}$, where $h = H(m)$. 
+    \(a\) represents a part of the verification equation tied to the message hash and the signature.
+    \item $b \leftarrow r / s \pmod{q}$. 
+    \(b\) accounts for the contribution of the signature component \(r\) in the verification process.
+    Together, \(a\) and \(b\) serve as inputs to reconstruct the expected value of the signature.
+    \item $v \leftarrow (g^a \cdot h^b \pmod{p}) \pmod{q}$, where $h$ is the \textbf{public key}.
+    Compute \(v\) as the combination of \(g^a\) and \(y^b\), reduced modulo \(p\) and \(q\).  
+    \begin{itemize}
+        \item \(g^a \mod p\): Represents the contribution of the message hash \(h\) scaled by the random value \(k\).
+        \item \(y^b \mod p\): Represents the contribution of the public key \(y\), derived from the private key \(x\).
+    \end{itemize}
+
+    \item Accept the signature if and only if $v = r$.
+    This final check ensures that the signature \((r, s)\) corresponds to the message \(m\) and the signer’s private key \(x\), without revealing \(x\).
+\end{itemize}
+
+DSA is slower than RSA. Operations over 2048 bit values, and they are expensive, since inverses have to be computed
+
+\subsubsection{EC-DSA}
+\textbf{Elliptic Curve Digital Signature Algorithm} is an elliptic curve-based variant of DSA,
+designed to provide equivalent security to DSA but with smaller key sizes, making it more efficient for computation, storage, and bandwidth. \\
+
+Choose a random integer $a$ and a point $P$ on the curve. The private key is $a$ and the public key is $Q = aP$. \\
+
+\textbf{Signing:}
+\begin{itemize}
+    \item Choose a random number $k$
+    \item Compute $kP = (x_1, y_1)$
+    \item Compute $s = k^{-1}(H(m) + ax_1)$
+    \item Signature is $(x_1, s)$
+\end{itemize}
+
+\textbf{Verification:}
+\begin{itemize}
+    \item Compute $u_1 = H(m)s^{-1}$ and $u_2 = x_1s^{-1}$
+    \item Compute $u_1P + u_2Q = (x_0, y_0)$
+    \item Check if $x_0 = x_1$
+\end{itemize}
+
+Remark:
+\[ u_1P = u_2Q = u_1P + u_2aP = P(u_1 + u_2a) \]
+\[ = P(H(m)s^{-1} + x_1s^{-1}a) = P(H(m)s^{-1} + k - H(m)s^{-1}) = kP\]
+
+This demonstrates the relationship between the elliptic curve point \(P = u_1G + u_2Q\) and the random value \(k\) used during signing, where:
+    \[
+    P = u_1G + u_2Q = kP
+    \]
+During verification, \(P\) is calculated using the signature components \(r\) and \(s\), the message hash \(H(m)\), and the public key \(Q\).
+ By substituting the definitions of \(u_1 = H(m)s^{-1} \mod n\) and \(u_2 = rs^{-1} \mod n\), the equation becomes:
+    \[
+    P = G(s^{-1}(H(m) + rd))
+    \]
+
+    The term \(H(m) + rd\) matches the signature equation, where:
+    \[
+    H(m) + rd = ks
+    \]
+    Substituting this gives:
+    \[
+    P = G(k) = kG
+    \]
+
+    This shows that the point \(P\) calculated during verification is equal to the point \(kP\) generated during the signing process, ensuring the correctness of the signature.
+
+
+
+
+
+\subsubsection{Comparison of RSA, DSA, and ECDSA}
+\begin{itemize}
+    \item \textbf{Speed for digital signature:} RSA is better than DSA or ECDSA.
+    \item \textbf{Key size:} EC-DSA requires smaller key sizes than RSA or DSA.
+    \item \textbf{Implementation:} EC-DSA is easier to implement than DSA or RSA.
+\end{itemize}
+
+\subsubsection{Schorr Signatures}
+\Comment{do we really need to know these two?}
+\subsubsection{Nyberg-Rueppel Signatures}

@@ -439,7 +439,22 @@ Thus, taking the cube root of this value yields the original message $m$.
 \[ X = c_i \pmod{N_i} \  \text{for} \ i = 1,2,3 \]
 \[ X = m^3 \pmod{N_1 \cdot N_2 \cdot N_3} \]
 
-An attacker can now decrypt the message $m$ without knowing the private keys.
+An attacker can now decrypt the message $m$ without knowing the private keys. \\
+
+Another example taken from assignment 3: \\
+
+A grade between 10 and 100 is encrypted as ciphertext $c = 300763$, with public key $(N,e ) = \\
+(0x009026120d59a38f00 \cdots bc859f590645eb0f77196b, 3)$, where the modulo is encoded as a hexidecimal number. \\
+
+Note that the encryptoion exponent $e = 3$ is very small, $e << N$. If $m^e < N$, then the ciphertext 
+$c = m^e \pmod{N}$ is the same as $m^e$. This is because the modulus $N$ is so large that the cube of any number less than $N$ is less than $N^2$ (the value doesn't wrap around N). \\
+
+We can easily compute the plain text using the cube root of the ciphertext:
+
+\[ c = m^3 \]
+\[ m = \sqrt[3]{c} = \sqrt[3]{300763} = 67\]
+
+This value lies within the range [10, 100], so the plaintext is 67. So, this scheme is \emph{very insecure}.
 
 \subsubsection{Why can't we compute the private key from the public key?}
 Say we have the public key $(e,N)$, why can I not just get the private key $d$ by computing $d$ as the modular inverse of $e$ and $\phi(N)$? \\
